@@ -2,8 +2,7 @@
   "name": "COMP584-REST",
   "main": "server.js",
   "scripts": {
-    "start": "node -r dotenv/config ./bin/www",
-    "setup": "node scripts/setup.js"
+    "start": "node -r dotenv/config ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^0.8.5",
