@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Yelp Comparison Search!</title>
+	<!-- ont-awesome is for yelp icons and other random css elements -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--  Angular from Google CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+
+	<!-- Load AppController -->
+	<script type="text/javascript" src="../controllers/app.js"></script>
+</head>
+<body ng-controller="appCtrl">
+<nav class="navbar navbar-default">
+
+	    <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed text--align--center" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	       <a class="navbar-brand " href="/index">SWISH</a>
+	      <a class="navbar-brand " href="/login">Login</a>
+	      <a class="navbar-brand " href="/register">Register</a>
+	    </div>
+	  </div><!-- /.container-fluid -->
+</nav>
+
+	<div class="container" id = "topHeadBox">
+		<div class="jumbotron text-center">
+			<h1>Search For A Restaurant!  <i class="fa fa-yelp" aria-hidden="true"></i></h1>
+
+		</div>
+
+		<!-- MODEL LIST -->
+		<div id="model-list" class="row">
+			<div class="col-sm-4 col-sm-offset-4">
+
+				<!-- LOOP OVER THE MODELS IN $scope.models -->
+				<div ng-repeat="model in models" class="model-item">
+					<div class="input-group input-group-lg">
+						<div class="input-group-addon">
+							<div class="glyphicon glyphicon-remove" ng-click="deleteModel(model._id)">
+							</div>
+						</div>
+
+						<div type="text" class="form-control"> {{model.name}}</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- FORM TO CREATE MODELS -->
+		<div id="model-form" class="form-horizontal">
+			<div class="col-sm-8 col-sm-offset-2 text-center" id="name-field">
+				
+				<!-- Only posts to Angular's createModel if form is valid and was submitted -->
+				<form name="modelCreate" ng-submit="modelCreate.$valid && submitted && createModel()" novalidate>
+					<div class="form-group" ng-class="{'has-error': submitted && modelCreate.name.$invalid}">
+						
+						<!-- BIND THIS VALUE TO formData.name -->
+						<div class="col-sm-12">
+							<input type="name" name="name"  class="form-control input-lg text-center" placeholder="Look for something!" ng-model="formData.name" required />
+							
+							<div ng-show="submitted && modelCreate.name.$invalid">
+								<p ng-show="modelCreate.name.$error.required">
+									A Search Query is required.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sets the value submitted to true to help with form validation -->
+					<button type="submit" class="btn btn-primary btn-lg" ng-click="submitted=true">
+						Go!
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
