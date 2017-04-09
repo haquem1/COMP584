@@ -60,7 +60,7 @@ returns status and message
 POST<br><br>
 
 set Authorization in header to returned token value from authenticate api
-pass in location which is zip code as param which is just appended with a slash in the url and query string parameters of term which is any keyword(s) passed and price which can be any combination of 1,2,3,4 in ascending order and food category also comma delimited. Only location and term are required parameters.
+pass in location which is zip code as param which is just appended with a slash in the url and query string parameters of term which is any keyword(s) passed and price which can be any combination of 1,2,3,4 in ascending order and food category also comma delimited (list of accepted categories can be found in the categories.json file models or from here https://www.yelp.com/developers/documentation/v3/all_category_list. Only location and term are required parameters.
 returns JSON result from query
 ```
 /search/:location
