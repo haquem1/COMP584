@@ -14,9 +14,9 @@ The app's database is currently hosted on MongoLab. <br><br>However, you can dow
 
 
 ## Configure
-Clone the repository, and you will have the structure in place to start. Edit the package.json file or use ```npm install <module> --save```
+Clone the repository, and you will have the structure in place to start. Edit the package.json file or use <br>```npm install <module> --save```
 
-Install all listed dependencies by navigating to the repository in Terminal and running the command ```npm install```
+Install all listed dependencies by navigating to the repository in Terminal and running the command <br>```npm install```
 
 This will install [**Express**](http://expressjs.com/4x/api.html) along with the other packages in the package.json file. 
 
@@ -35,19 +35,17 @@ module.exports = {
 
 
 #### Run the server
-To run this server on our local machine, in the root of the project directory run 
-
-```npm start``` 
+To run this server on our local machine, in the root of the project directory run <br> ```npm start``` 
 
 It will start the application and you should be able to navigate to http://localhost:8080/ for the base URL to our API if running on your local machine.
 
 i.e. http://localhost:8080/memberinfo is the route to get the homepage for members
 
-``` 
+
 #### Our routes
 
 ###### Registration
-```
+``` 
 POST
 
 /signup
