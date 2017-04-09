@@ -1,4 +1,4 @@
-# MEAN Structure
+# Application Structure
 This web application uses the MEAN stack (MongoDB, Express, AngularJS, and NodeJS).
 
 ## Setup
