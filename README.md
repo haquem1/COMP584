@@ -36,8 +36,9 @@ To run this server on our local machine, in the root of the project directory ru
 
 It will start the application and you should be able to navigate to http://localhost:8080/ for the base URL to our API if running on your local machine.
 
-i.e. http://localhost:8080/memberinfo is the route to get the homepage for members
+If using our deployed version, the base URL is https://swish-api.herokuapp.com, you will not to need to run anything on your terminal
 
+i.e. http://localhost:8080/memberinfo or https://swish-api.herokuapp.com/memberinfo is the route to get the homepage for members
 
 #### Our routes
 
