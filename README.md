@@ -28,7 +28,7 @@ It will start the application and you should be able to navigate to <br>```http:
 
 If using our deployed version, the base URL is <br>```https://swish-api.herokuapp.com```, you will not to need to run anything on your terminal.
 
-i.e. ```http://localhost:8080/memberinfo```<br> or <br>```https://swish-api.herokuapp.com/memberinfo``` is the route to get the homepage for members
+i.e. ```http://localhost:8080/memberinfo```or ```https://swish-api.herokuapp.com/memberinfo``` <br>is the route to get the homepage for members
 
 ## Our routes
 
