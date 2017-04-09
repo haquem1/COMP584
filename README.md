@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# SQLSaturday
-=======
 # MEAN Structure
 This web application uses the MEAN stack (MongoDB, Express, AngularJS, and NodeJS).
 
@@ -18,11 +15,11 @@ Clone the repository, and you will have the structure in place to start. Edit th
 
 Install all listed dependencies by navigating to the repository in Terminal and running the command <br>```npm install```
 
-This will install [**Express**](http://expressjs.com/4x/api.html) along with the other packages in the package.json file. 
+This will install [**Express**](http://expressjs.com/4x/api.html) along with the other packages in the package.json file.
 
-In the above, "latest" denotes version number. It's a string. I set it to latest to simplify use. I am also assuming that these package owners will continue to document their changes as they update their packages. 
+In the above, "latest" denotes version number. It's a string. I set it to latest to simplify use. I am also assuming that these package owners will continue to document their changes as they update their packages.
 
-The project also makes use of environment variables. A template is included in the repository but, the actual values has been distributed to the team via our team Slack. 
+The project also makes use of environment variables. A template is included in the repository but, the actual values has been distributed to the team via our team Slack.
 
 #### Connecting to a Database
 Replace the link below with the url for your hosted DB or keep this url for the default local MongoDB
@@ -35,7 +32,7 @@ module.exports = {
 
 
 #### Run the server
-To run this server on our local machine, in the root of the project directory run <br> ```npm start``` 
+To run this server on our local machine, in the root of the project directory run <br> ```npm start```
 
 It will start the application and you should be able to navigate to http://localhost:8080/ for the base URL to our API if running on your local machine.
 
@@ -48,9 +45,9 @@ i.e. http://localhost:8080/memberinfo is the route to get the homepage for membe
 POST<br><br>
 pass in name and password through url encoded form body
 returns status and message for user creation
-``` 
+```
 /signup
-``` 
+```
 
 ###### Authenticate
 POST<br><br>
@@ -58,25 +55,25 @@ pass in name and password through url encoded form body
 returns status with either web token or message
 ```
 /authenticate
-``` 
+```
 
 ###### Member Area
 GET<br><br>
 set Authorization in header to returned token value from authenticate api
-returns status and message 
+returns status and message
 ```
 /memberinfo
-``` 
+```
 
 ###### Restaurant Search
 POST<br><br>
 
 set Authorization in header to returned token value from authenticate api
 pass in location which is zip code as param which is just appended with a slash in the url and query string parameters of term which is any keyword(s) passed and price which can be any combination of 1,2,3,4 in ascending order
-returns JSON result from query 
+returns JSON result from query
 ```
 /search/:location
-``` 
+```
 
 ###### Restaurant Information
 POST<br><br>
@@ -86,7 +83,7 @@ pass in business id for any given business from Yelp as param which is just appe
 returns JSON result from query
 ```
 /business/:id
-``` 
+```
 
 ###### Restaurant Review Information
 POST<br><br>
@@ -96,6 +93,4 @@ pass in business id for any given business from Yelp as param which is just appe
 returns JSON result from query
 ```
 /reviews/:id
-``` 
-
->>>>>>> b18113ba24e2dc519c3c52b7d4620469504f1500
+```
