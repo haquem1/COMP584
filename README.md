@@ -85,13 +85,3 @@ returns JSON result from query
 ```
 /business/:id
 ```
-
-###### Restaurant Review Information
-POST<br><br>
-
-set Authorization in header to returned token value from authenticate api
-pass in business id for any given business from Yelp as param which is just appended with a slash in the url
-returns JSON result from query
-```
-/reviews/:id
-```
