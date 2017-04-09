@@ -14,6 +14,6 @@
     "morgan": "~1.5.0",
     "passport": "^0.3.0",
     "passport-jwt": "^1.2.1",
-    "yelp-api-v3": "^1.5.0"
+    "yelp-api-v3": "https://github.com/haquem1/yelp-api-v3.git"
   }
 }
