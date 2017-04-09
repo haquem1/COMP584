@@ -45,66 +45,57 @@ i.e. http://localhost:8080/memberinfo is the route to get the homepage for membe
 #### Our routes
 
 ###### Registration
-``` 
-POST
-
-/signup
-
+POST<br><br>
 pass in name and password through url encoded form body
 returns status and message for user creation
 ``` 
+/signup
+``` 
 
 ###### Authenticate
-```
-POST
-
-/authenticate
-
+POST<br><br>
 pass in name and password through url encoded form body
 returns status with either web token or message
+```
+/authenticate
 ``` 
 
 ###### Member Area
-```
-GET
-
-/memberinfo
-
+GET<br><br>
 set Authorization in header to returned token value from authenticate api
 returns status and message 
+```
+/memberinfo
 ``` 
 
 ###### Restaurant Search
-```
-POST
-
-/search/:location
+POST<br><br>
 
 set Authorization in header to returned token value from authenticate api
 pass in location which is zip code as param which is just appended with a slash in the url and query string parameters of term which is any keyword(s) passed and price which can be any combination of 1,2,3,4 in ascending order
 returns JSON result from query 
+```
+/search/:location
 ``` 
 
 ###### Restaurant Information
-```
-POST
-
-/business/:id
+POST<br><br>
 
 set Authorization in header to returned token value from authenticate api
 pass in business id for any given business from Yelp as param which is just appended with a slash in the url
 returns JSON result from query
+```
+/business/:id
 ``` 
 
 ###### Restaurant Review Information
-```
-POST
-
-/reviews/:id
+POST<br><br>
 
 set Authorization in header to returned token value from authenticate api
 pass in business id for any given business from Yelp as param which is just appended with a slash in the url
 returns JSON result from query
+```
+/reviews/:id
 ``` 
 
 >>>>>>> b18113ba24e2dc519c3c52b7d4620469504f1500
