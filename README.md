@@ -21,14 +21,14 @@ In the above, "latest" denotes version number. It's a string. I set it to latest
 
 The project also makes use of environment variables. A template is included in the repository but, the actual values has been distributed to the team via our team Slack.
 
-#### Run the server
+## Run the server
 To run this server on our local machine, in the root of the project directory run <br> ```npm start```
 
-It will start the application and you should be able to navigate to http://localhost:8080/ for the base URL to our API if running on your local machine.
+It will start the application and you should be able to navigate to <br>```http://localhost:8080/``` for the base URL to our API if running on your local machine.
 
-If using our deployed version, the base URL is https://swish-api.herokuapp.com, you will not to need to run anything on your terminal.
+If using our deployed version, the base URL is <br>```https://swish-api.herokuapp.com```, you will not to need to run anything on your terminal.
 
-i.e. http://localhost:8080/memberinfo or https://swish-api.herokuapp.com/memberinfo is the route to get the homepage for members
+i.e. ```http://localhost:8080/memberinfo```<br> or <br>```https://swish-api.herokuapp.com/memberinfo``` is the route to get the homepage for members
 
 ## Our routes
 
