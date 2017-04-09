@@ -30,11 +30,6 @@ getResponse = function (req, res, option) {
     .then(function (data) { res.json(data); })
     .catch(function (err) { console.error(err);});
   }
-  else if (option == 3) {
-    yelp.reviews(req.params.id)
-    .then(function (data) { res.json(data); })
-    .catch(function (err) { console.error(err);});
-  }
   else {
     res.json({success: false, msg: 'Option does not exist'});
   }
