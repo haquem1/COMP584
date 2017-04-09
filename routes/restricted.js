@@ -3,7 +3,7 @@ const yelp = require('../config/yelp'); //contains our token config
 // choose response from protected route
 getResponse = function (req, res, option) {
   if (option == 0) {
-    res.json({success: true, msg: 'Welcome in the member area ' + user.name + '!'});
+    res.json({success: true, msg: 'Welcome in the member area !'});
   }
   else if (option == 1) {
     // price is an optional parameter that users can filter by
