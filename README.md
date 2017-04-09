@@ -40,9 +40,9 @@ If using our deployed version, the base URL is https://swish-api.herokuapp.com, 
 
 i.e. http://localhost:8080/memberinfo or https://swish-api.herokuapp.com/memberinfo is the route to get the homepage for members
 
-#### Our routes
+## Our routes
 
-###### Registration
+#### Registration
 POST<br><br>
 pass in name and password through url encoded form body
 returns status and message for user creation
@@ -50,7 +50,7 @@ returns status and message for user creation
 /signup
 ```
 
-###### Authenticate
+#### Authenticate
 POST<br><br>
 pass in name and password through url encoded form body
 returns status with either web token or message
@@ -58,7 +58,7 @@ returns status with either web token or message
 /authenticate
 ```
 
-###### Member Area
+#### Member Area
 GET<br><br>
 set Authorization in header to returned token value from authenticate api
 returns status and message
@@ -66,7 +66,7 @@ returns status and message
 /memberinfo
 ```
 
-###### Restaurant Search
+#### Restaurant Search
 POST<br><br>
 
 set Authorization in header to returned token value from authenticate api
@@ -76,7 +76,7 @@ returns JSON result from query
 /search/:location
 ```
 
-###### Restaurant Information
+#### Restaurant Information
 POST<br><br>
 
 set Authorization in header to returned token value from authenticate api
