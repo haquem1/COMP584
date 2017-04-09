@@ -7,7 +7,7 @@ This web application uses the MEAN stack (MongoDB, Express, AngularJS, and NodeJ
 To get this running locally, start by installing [**NodeJS**](http://nodejs.org/download/). The Node website is very good at explaining how to do this. Once installed verify that npm (Node Package Manager) came with the installation by running npm in Terminal.
 
 #### Mongo
-The app's database is currently hosted on MongoLab. <br>However, you can download and install [**MongoDB**](http://www.mongodb.org/downloads) to have it running on your local machine. **Make sure to follow all the directions for installing on your respective operating system.** Verify that this is installed correctly by running the mongo server locally with the command ```mongod```. The mongod service must be running locally to point to local Mongo databases.
+The app's database is currently hosted on MongoLab. <br/>However, you can download and install [**MongoDB**](http://www.mongodb.org/downloads) to have it running on your local machine. **Make sure to follow all the directions for installing on your respective operating system.** Verify that this is installed correctly by running the mongo server locally with the command ```mongod```. The mongod service must be running locally to point to local Mongo databases.
 
 
 ## Configure
@@ -45,7 +45,7 @@ To run this server, in the root of the project directory run
 
 It will start the application and you should be able to navigate to http://localhost:8080/ for the base URL to our API.
 
-i.e. http://localhost:8080/getmemberinfo is the route to get the homepage for members
+i.e. http://localhost:8080/memberinfo is the route to get the homepage for members
 
 ``` 
 #### Our routes
