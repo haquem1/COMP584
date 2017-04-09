@@ -15,7 +15,7 @@ Clone the repository, and you will have the structure in place to start. Edit th
 
 Install all listed dependencies by navigating to the repository in Terminal and running the command 
 
-```npm install``` 
+```npm install
 
 This will install [**Express**](http://expressjs.com/4x/api.html) along with the other packages in the package.json file. 
 
