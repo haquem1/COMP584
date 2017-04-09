@@ -35,8 +35,4 @@ routes.get('/business/:id', passport.authenticate('jwt', { session: false}), fun
   authHandler.protect(req, res, 2);
 });
 
-routes.get('/reviews/:id', passport.authenticate('jwt', { session: false}), function(req, res) {
-  authHandler.protect(req, res, 3);
-});
-
 module.exports = routes;
