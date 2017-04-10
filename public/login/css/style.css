@@ -101,8 +101,7 @@ body {
   background: -moz-linear-gradient(right, #607D8B, #546E7A);
   background: -o-linear-gradient(right, #607D8B, #546E7A);
   background: linear-gradient(to left, #607D8B, #546E7A);
-  background-image: url("../../assets/img/bread-back.jpg");
-  background-size: cover;
+  background-image: url("../../assets/img/bread-back.jpeg");
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
