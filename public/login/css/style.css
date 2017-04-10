@@ -101,6 +101,8 @@ body {
   background: -moz-linear-gradient(right, #607D8B, #546E7A);
   background: -o-linear-gradient(right, #607D8B, #546E7A);
   background: linear-gradient(to left, #607D8B, #546E7A);
+  background-image: url("https://static.pexels.com/photos/85121/dumplings-dinner-polish-food-85121.jpeg");
+  background-size: cover;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
