@@ -103,7 +103,6 @@ body {
   background: linear-gradient(to left, #607D8B, #546E7A);
   background-image: url("../../assets/img/bread-back.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
