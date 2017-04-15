@@ -2,7 +2,8 @@
   "name": "COMP584-REST",
   "main": "server.js",
   "scripts": {
-    "start": "node -r dotenv/config ./bin/www"
+    "start": "node -r dotenv/config ./bin/www",
+    "deploy": "git push heroku master"
   },
   "dependencies": {
     "angular2-cli": "^1.0.0-alpha.6",
