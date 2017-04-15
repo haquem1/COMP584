@@ -2,7 +2,7 @@
   "name": "COMP584-REST",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon -r dotenv/config ./bin/www"
+    "start": "node -r dotenv/config ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^0.8.5",
@@ -15,8 +15,5 @@
     "passport": "^0.3.0",
     "passport-jwt": "^1.2.1",
     "yelp-api-v3": "https://github.com/haquem1/yelp-api-v3.git"
-  },
-  "devDependencies": {
-    "nodemon": "^1.11.0"
   }
 }
