@@ -5,6 +5,7 @@
     "start": "node -r dotenv/config ./bin/www"
   },
   "dependencies": {
+    "angular2-cli": "^1.0.0-alpha.6",
     "bcrypt": "^0.8.5",
     "body-parser": "~1.9.2",
     "dotenv": "^4.0.0",
