@@ -6,9 +6,7 @@
         .config(config)
         .run(run);
 
-    function config($stateProvider, $urlRouterProvider) {
-        // default route
-        $urlRouterProvider.otherwise("/");
+    function config($stateProvider, $urlRouterProvider, $locationProvider) {
 
         // app routes
         $stateProvider
@@ -24,6 +22,10 @@
                 controller: 'Login.IndexController',
                 controllerAs: 'vm'
             });
+            // pretty url routing
+            $locationProvider.html5Mode(true);
+            // default route
+            $urlRouterProvider.otherwise("/");
     }
 
     function run($rootScope, $http, $location, $localStorage) {

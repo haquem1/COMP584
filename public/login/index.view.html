@@ -1,6 +1,7 @@
 
-  <div class="login-page">
+  <div class="login-page" ng-cloak>
     <link rel="stylesheet" href="//swish-platform.herokuapp.com/login/css/style.css">
+    <link rel="stylesheet" href="login/css/style.css">
 
     <div id="title">SWISH</div>
     <div class="form">
@@ -10,15 +11,16 @@
         <input name="password" type="password" placeholder="password"/>
         <input name="confirm" type="password" placeholder="confirm password"/>
         <button>create</button>
-        <p class="message">Already registered? <a href="">Sign In</a></p>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
       </form>
-      <form name="form" class="login-form" ng-submit="vm.login()">
+      <form class="login-form" ng-submit="vm.login()">
         <h2>Login</h2>
         <input name="username" type="text" placeholder="username" ng-model="vm.username" required/>
         <input name="password" type="password" placeholder="password" ng-model="vm.password" required/>
         <button>login</button>
-        <p class="message">Not registered? <a href="">Create an account</a></p>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
       </form>
     </div>
-    <script src="//swish-platform.herokuapp.com/login/js/index.js"></script>
+    <!-- jquery animation -->
+    <script src="/login/js/index.js"></script>
   </div>

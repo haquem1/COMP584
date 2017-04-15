@@ -26,4 +26,9 @@ app.use(morgan('dev'));
 // bundle and connect the api routes under /
 app.use('/', require('./routes'));
 
+// redirect to route if doesn't exist
+app.get('*', function(req, res, next){
+  return res.redirect(req.get('Host'));
+});
+
 module.exports = app;

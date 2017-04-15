@@ -1,3 +1,7 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 .model-item {
 	padding-bottom: 5px;
 }
@@ -15,5 +19,5 @@ body {
 }
 
 .help-block {
-	font-size: 12p;
+	font-size: 12px;
 }
