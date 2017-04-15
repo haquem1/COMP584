@@ -12,7 +12,7 @@ getResponse = function (req, res, option) {
       if (req.query.price) {
         yelp.search({term: req.query.term, location: req.params.location, categories: req.query.categories, price: req.query.price})
         .then(function (data) {
-            res.json(data);
+            res.send(JSON.parse(data));
         })
         .catch(function (err) {
             console.error(err);
@@ -20,7 +20,7 @@ getResponse = function (req, res, option) {
       } else {
         yelp.search({term: req.query.term, location: req.params.location, categories: req.query.categories})
         .then(function (data) {
-            res.send(data);
+            res.send(JSON.parse(data));
         })
         .catch(function (err) {
             console.error(err);
@@ -30,7 +30,7 @@ getResponse = function (req, res, option) {
       if (req.query.price) {
         yelp.search({term: req.query.term, location: req.params.location, price: req.query.price})
         .then(function (data) {
-            res.json(data);
+            res.send(JSON.parse(data));
         })
         .catch(function (err) {
             console.error(err);
@@ -38,7 +38,7 @@ getResponse = function (req, res, option) {
       } else {
         yelp.search({term: req.query.term, location: req.params.location})
         .then(function (data) {
-            res.send(data);
+            res.send(JSON.parse(data));
         })
         .catch(function (err) {
             console.error(err);
@@ -49,7 +49,7 @@ getResponse = function (req, res, option) {
   }
   else if (option == 2) {
     yelp.business(req.params.id)
-    .then(function (data) { res.json(data); })
+    .then(function (data) { res.send(JSON.parse(data)); })
     .catch(function (err) { console.error(err);});
   }
   else {
