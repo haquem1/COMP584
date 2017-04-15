@@ -12,16 +12,17 @@ var forceSsl = function (req, res, next) {
 };
 
 var env = process.env.NODE_ENV || 'dev';
-app.configure(function () {
-   if (env === 'prod') {
-     app.use(forceSsl)
-   };
-}
 
 // get request parameters
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+app.configure(function () {
+   if (env === 'prod') {
+     app.use(forceSsl)
+   };
+}
 
 // log to console
 app.use(morgan('dev'));
