@@ -4,6 +4,8 @@ var bodyParser  = require('body-parser');
 var morgan      = require('morgan');
 var app         = express();
 
+var env = process.env.NODE_ENV || 'dev';
+
 var forceSsl = function (req, res, next) {
    if (req.headers['x-forwarded-proto'] !== 'https') {
        return res.redirect(['https://', req.get('Host'), req.url].join(''));
@@ -11,7 +13,6 @@ var forceSsl = function (req, res, next) {
    return next();
 };
 
-var env = process.env.NODE_ENV || 'dev';
 if (env === 'prod') app.use(forceSsl);
 
 // get request parameters
