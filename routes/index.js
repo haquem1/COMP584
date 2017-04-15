@@ -13,7 +13,7 @@ const routes = require('express').Router();
 mongoose.connect(config.database);
 
 // route to sign up a user
-routes.post('/signup', function(req, res) {
+routes.post('/register', function(req, res) {
   authHandler.signup(req, res);
 });
 
