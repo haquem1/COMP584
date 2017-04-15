@@ -1,0 +1,42 @@
+    <div id="main">
+      <link rel="stylesheet" href="css/styles.css" />
+      <style>
+      body {
+          background: #607D8B; /* fallback for old browsers */
+          background: -webkit-linear-gradient(right, #607D8B, #546E7A);
+          background: -moz-linear-gradient(right, #607D8B, #546E7A);
+          background: -o-linear-gradient(right, #607D8B, #546E7A);
+          background: linear-gradient(to left, #607D8B, #546E7A);
+          font-family: "Roboto", sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+      }
+      #title{
+          margin-top: 0.5em;
+          text-align: center;
+          margin-top: 0.5em;
+          padding: 0.5em;
+          color: #607D8B;
+          font-size: 2.5em;
+          border: 3px solid #607D8B;
+          margin-bottom: 0.5em;
+      }
+      </style>
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <!-- HEADER AND NAVBAR -->
+        <header>
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <div id="title">SWISH</div>
+                </div>
+            </div>
+            </nav>
+        </header>
+        <div class="jumbotron">
+          <p>You're logged in with JWT!!</p>
+          <p><a href="#/login">Logout</a></p>
+        </div>
+
+    </div>
