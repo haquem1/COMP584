@@ -12,7 +12,7 @@ var forceSsl = function (req, res, next) {
    }
    return next();
 };
-
+// force https protocol in production
 if (env === 'prod') app.use(forceSsl);
 
 // get request parameters
