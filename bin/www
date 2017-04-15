@@ -5,10 +5,6 @@ var app = require('../server');
 var debug = require('debug')('yelp:server');
 var http = require('http');
 
-// get port from environment and store for express
-var port = normalizePort(process.env.PORT || '8080');
-app.set('port', port);
-
 var forceSsl = function (req, res, next) {
    if (req.headers['x-forwarded-proto'] !== 'https') {
        return res.redirect(['https://', req.get('Host'), req.url].join(''));
@@ -17,6 +13,10 @@ var forceSsl = function (req, res, next) {
 };
 
 app.use(forceSsl);
+
+// get port from environment and store for express
+var port = normalizePort(process.env.PORT || '8080');
+app.set('port', port);
 
 // create http server
 var server = http.createServer(app);
