@@ -3,14 +3,14 @@
 // module dependencies
 var app = require('../server');
 var debug = require('debug')('yelp:server');
-var http = require('http');
+var https = require('https');
 
 // get port from environment and store for express
 var port = normalizePort(process.env.PORT || '8080');
 app.set('port', port);
 
 // create http server
-var server = http.createServer(app);
+var server = https.createServer(app);
 
 // listen on port
 server.listen(port);
@@ -20,7 +20,7 @@ server.on('listening', onListening);
 // to normalize port
 function normalizePort(val) {
   var port = parseInt(val, 10);
-  
+
   if (isNaN(port)) return val; // named pipe
   if (port >= 0) return port; // port number
 
