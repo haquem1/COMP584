@@ -9,6 +9,15 @@ var http = require('http');
 var port = normalizePort(process.env.PORT || '8080');
 app.set('port', port);
 
+var forceSsl = function (req, res, next) {
+   if (req.headers['x-forwarded-proto'] !== 'https') {
+       return res.redirect(['https://', req.get('Host'), req.url].join(''));
+   }
+   return next();
+};
+
+app.use(forceSsl);
+
 // create http server
 var server = http.createServer(app);
 
@@ -58,12 +67,3 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
-
-var forceSsl = function (req, res, next) {
-   if (req.headers['x-forwarded-proto'] !== 'https') {
-       return res.redirect(['https://', req.get('Host'), req.url].join(''));
-   }
-   return next();
-};
-
-app.use(forceSsl);
