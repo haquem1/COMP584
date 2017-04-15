@@ -10,8 +10,10 @@ body {
     background-color: #ff4d4d;
 }
 
-.topHeadBox
-{
+.topHeadBox {
 	background-color:  #0099cc;
 }
 
+.help-block {
+	font-size: 12p;
+}

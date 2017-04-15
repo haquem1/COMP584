@@ -12,6 +12,9 @@ app.use(bodyParser.json());
 // log to console
 app.use(morgan('dev'));
 
+// bundle and connect the api routes under /
+app.use('/', require('./routes'));
+
 // force HTTPS protocol
 const forceSSL = function() {
   return function (req, res, next) {
@@ -26,7 +29,5 @@ const forceSSL = function() {
 
 // use forceSSL middleware
 app.use(forceSSL());
-// bundle and connect the api routes under /
-app.use('/', require('./routes'));
 
 module.exports = app;
