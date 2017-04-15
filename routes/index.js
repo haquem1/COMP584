@@ -23,16 +23,16 @@ routes.post('/authenticate', function(req, res) {
 });
 
 // routes to restricted areas
-routes.get('/memberinfo', passport.authenticate('jwt', { session: false}), function(req, res) {
+routes.get('/memberinfo', function(req, res) {
   authHandler.protect(req, res, 0);
-});
+}, passport.authenticate('jwt', { session: false}));
 
-routes.get('/search/:location', passport.authenticate('jwt', { session: false}), function(req, res) {
+routes.get('/search/:location', function(req, res) {
   authHandler.protect(req, res, 1);
-});
+}, passport.authenticate('jwt', { session: false}));
 
-routes.get('/business/:id', passport.authenticate('jwt', { session: false}), function(req, res) {
+routes.get('/business/:id', function(req, res) {
   authHandler.protect(req, res, 2);
-});
+}, passport.authenticate('jwt', { session: false}));
 
 module.exports = routes;
