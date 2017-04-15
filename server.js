@@ -12,21 +12,6 @@ app.use(bodyParser.json());
 // log to console
 app.use(morgan('dev'));
 
-// bundle and connect the api routes under /
-app.use('/', require('./routes'));
-
-// force HTTPS protocol
-const forceSSL = function() {
-  return function (req, res, next) {
-    if (req.headers['x-forwarded-proto'] !== 'https') {
-      return res.redirect(
-       ['https://', req.get('Host'), req.url].join('')
-      );
-    }
-    next();
-  }
-}
-
 // use forceSSL middleware
 app.use(forceSSL());
 
