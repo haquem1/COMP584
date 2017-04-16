@@ -1,0 +1,99 @@
+.swish-card-area{
+  background-color:#F5F5F5;
+  height:auto;
+  min-height:auto;
+}
+
+.swish-card-item{
+  height:250px;
+  width:100%;
+  margin:6% 0 0 0;
+  overflow:hidden;
+}
+
+.swish-card-item:hover{
+  box-shadow:4px 4px 4px rgba(0,0,0,.25);
+}
+
+.card-item-information{
+  height:100%;
+  width:100%;
+  background-color:rgba(0,0,0,1);
+  overflow:hidden;
+  position:relative;
+}
+
+.card-item-info-container > p{
+  font-family:raleway;
+  color:white;
+  text-transform: capitalize;
+  margin:0;
+}
+
+.card-item-info-container{
+  position:absolute;
+  top:5%;
+  left:5%;
+}
+
+.card-item-name{
+  font-size:2em;
+}
+
+.card-item-address{
+  font-size:1em;
+  width:80%;
+}
+
+.card-item-phone{
+  font-size:1em;
+}
+
+.card-item-rating{
+  font-size:1em;
+}
+
+.rem-btn{
+  position:absolute;
+  top:5%;
+  right:5%;
+  height:12%;
+  transform:scale(1);
+  transition:transform .3s ease-in;
+}
+
+.rem-btn:hover{
+  transform:scale(1.2);
+}
+
+.card-item-information > img{
+  /* height:300px; */
+  width:100%;
+  opacity:.5;
+}
+
+.card-item-image{
+  height:300px;
+  /*width:100%;*/
+}
+
+.card-btn{
+  height:50px;
+  margin:0 5%;
+  transform:scale(1);
+  transition: all .3s linear;
+}
+
+.card-btn:hover{
+  transform:scale(1.2);
+}
+
+
+/*BTN container*/
+.card-btn-container{
+  position:absolute;
+  width:100%;
+  bottom:10%;
+  left:50%;
+  transform:translate(-50%, 0);
+}

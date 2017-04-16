@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swish</title>
+  <!-- SCROLLS -->
+  <!-- load bootstrap and fontawesome via CDN -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css"/>
+
+
+  <!-- SPELLS -->
+  <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+</head>
+<body>
+
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <!-- NAVIGATION BAR MODULE -->
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <link rel="stylesheet" href="./navigation_bar.css">
+  <section class="swish-nav">
+    <p class="swish-nav-logo">swish</p>
+    
+    <div class="swish-search-fields">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">
+              <img src="../assets/img/navigation_bar/search.svg" alt="desired food searched">
+            </span>
+            <input type="text" class="form-control" placeholder="Search Food..." aria-describedby="Enter desired food">
+          </div>    
+        </div>
+
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon2s">
+              <img src="../assets/img/navigation_bar/location.svg" alt="desired location icon">
+            </span>
+            <input type="text" class="form-control" placeholder="Location..." aria-describedby="nearby locations">
+          </div>    
+        </div>
+
+      </div>
+    </div>
+
+    <img class="swish-nav-menu-btn" src="../assets/img/navigation_bar/menu.svg" alt="navigation bar menu button">
+  </section>
+
+
+
+
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <!-- SEARCH FIELD MODULE -->
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <link rel="stylesheet" href="./search_results_bar.css">
+  <section class="swish-search-results">
+    <img class="dec-pointer" src="../assets/img/search_results_bar/pointy.svg" alt="just a pointy thing">
+    <div class="row">
+      <div class="col-lg-5 text-right">
+        <p class="search-food">chimichangas</p>
+      </div>
+      <div class="col-lg-2 text-center">
+        <img class="location_results_img" src="../assets/img/search_results_bar/result.svg" alt="location results for food">
+      </div>
+      <div class="col-lg-5 text-left">
+        <p class="search-city">Los Angeles, CA</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <!-- LIST MODULE -->
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <link rel="stylesheet" href="./list_result.css">
+  <section class="swish-list-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="row">
+            <div class="swish-list-item">
+              <div class="col-sm-6 col-lg-4">
+
+                <section class="item-information">
+                  <img src="../assets/img/search_list_item/sample1.jpg" alt="food sample 1">
+                  <div class="item-info-container">
+                    <p class="item-name">pollop coll</p>
+                    <p class="item-address">6421 selma ave los angeles, CA 90028</p>
+                    <p class="item-phone">(323) 934-3724</p>
+                    <p class="item-rating">4 stars</p>
+                  </div>
+                  <div class="add-btn-container">
+                    <img class="fav-btn" data-toggle="tooltip" data-placement="left" title="Add to favorite" src="../assets/img/search_list_item/add.svg" alt="">  
+                  </div>
+                </section>
+
+              </div>
+              <div class="col-sm-3 col-lg-4">
+                <img class="item-image" src="../assets/img/search_list_item/sample3.jpg" alt="food sample 2">
+              </div>
+              <div class="col-sm-3 col-lg-4">
+                <img class="item-image" src="../assets/img/search_list_item/sample2.jpg" alt="food sample 3">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <!-- CARD MODULE -->
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <link rel="stylesheet" href="./card_result.css">
+  <section class="swish-card-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="swish-card-item">
+
+            <section class="card-item-information">
+              <img src="../assets/img/search_list_item/sample1.jpg" alt="food sample 1">
+
+              <!-- |||||||||||||||||||||||||||| -->
+              <!-- -->
+              <!-- |||||||||||||||||||||||||||| -->
+              <div class="card-item-info-container">
+                <p class="card-item-name">pollop coll</p>
+                <p class="card-item-address">6421 selma ave los angeles, CA 90028</p>
+                <p class="card-item-phone">(323) 934-3724</p>
+                <p class="card-item-rating">4 stars</p>
+              </div>
+
+              <!-- |||||||||||||||||||||||||||| -->
+              <!-- REMOVE CARD BTN -->
+              <!-- |||||||||||||||||||||||||||| -->
+              <div class="rem-btn-container">
+                <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="../assets/img/search_card_item/remove.svg" alt="">  
+              </div>
+
+              <!-- |||||||||||||||||||||||||||| -->
+              <!-- CARD BTN CONTAINER -->
+              <!-- |||||||||||||||||||||||||||| -->
+              <div class="card-btn-container">
+                <div class="row text-center">
+                  <img class="card-btn" src="../assets/img/search_card_item/clock.svg" alt="restaurant hours">
+
+                  <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator">
+                  <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
+                  <a href="#!URL">
+                    <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="../assets/img/search_card_item/yelp.svg" alt="">
+                  </a>
+                </div>
+              </div>              
+              
+
+            </section>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="swish-card-item">
+
+            <section class="card-item-information">
+              <img src="../assets/img/search_list_item/sample1.jpg" alt="food sample 1">
+
+              <!-- |||||||||||||||||||||||||||| -->
+              <!-- -->
+              <!-- |||||||||||||||||||||||||||| -->
+              <div class="card-item-info-container">
+                <p class="card-item-name">pollop coll</p>
+                <p class="card-item-address">6421 selma ave los angeles, CA 90028</p>
+                <p class="card-item-phone">(323) 934-3724</p>
+                <p class="card-item-rating">4 stars</p>
+              </div>
+
+              <!-- |||||||||||||||||||||||||||| -->
+              <!-- REMOVE CARD BTN -->
+              <!-- |||||||||||||||||||||||||||| -->
+              <div class="rem-btn-container">
+                <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="../assets/img/search_card_item/remove.svg" alt="">  
+              </div>
+
+              <!-- |||||||||||||||||||||||||||| -->
+              <!-- CARD BTN CONTAINER -->
+              <!-- |||||||||||||||||||||||||||| -->
+              <div class="card-btn-container">
+                <div class="row text-center">
+                  <img class="card-btn" src="../assets/img/search_card_item/clock.svg" alt="restaurant hours">
+
+                  <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator">
+                  <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
+                  <a href="#!URL">
+                    <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="../assets/img/search_card_item/yelp.svg" alt="">
+                  </a>
+                </div>
+              </div>              
+              
+
+            </section>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="swish-card-item">
+
+            <section class="card-item-information">
+              <img src="../assets/img/search_list_item/sample1.jpg" alt="food sample 1">
+
+              <!-- |||||||||||||||||||||||||||| -->
+              <!-- -->
+              <!-- |||||||||||||||||||||||||||| -->
+              <div class="card-item-info-container">
+                <p class="card-item-name">pollop coll</p>
+                <p class="card-item-address">6421 selma ave los angeles, CA 90028</p>
+                <p class="card-item-phone">(323) 934-3724</p>
+                <p class="card-item-rating">4 stars</p>
+              </div>
+
+              <!-- |||||||||||||||||||||||||||| -->
+              <!-- REMOVE CARD BTN -->
+              <!-- |||||||||||||||||||||||||||| -->
+              <div class="rem-btn-container">
+                <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="../assets/img/search_card_item/remove.svg" alt="">  
+              </div>
+
+              <!-- |||||||||||||||||||||||||||| -->
+              <!-- CARD BTN CONTAINER -->
+              <!-- |||||||||||||||||||||||||||| -->
+              <div class="card-btn-container">
+                <div class="row text-center">
+                  <img class="card-btn" src="../assets/img/search_card_item/clock.svg" alt="restaurant hours">
+
+                  <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator">
+                  <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
+                  <a href="#!URL">
+                    <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="../assets/img/search_card_item/yelp.svg" alt="">
+                  </a>
+                </div>
+              </div>              
+              
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+</body>
+</html>

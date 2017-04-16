@@ -1,0 +1,82 @@
+.swish-list-area{
+  background-color:#F5F5F5;
+  height:auto;
+  min-height:auto;
+}
+
+.swish-list-item{
+  height:250px;
+  width:100%;
+  margin:6% 0 0 0;
+  overflow:hidden;
+}
+
+.swish-list-item:hover{
+  box-shadow:4px 4px 4px rgba(0,0,0,.25);
+}
+
+.item-information{
+  height:300px;
+  width:100%;
+  background-color:rgba(0,0,0,1);
+  overflow:hidden;
+  position:relative;
+}
+
+.item-info-container > p{
+  font-family:raleway;
+  color:white;
+  text-transform: capitalize;
+  margin:0;
+}
+
+.item-info-container{
+  position:absolute;
+  bottom:20%;
+  left:5%;
+}
+
+.item-name{
+  font-size:2em;
+}
+
+.item-address{
+  font-size:1em;
+  width:80%;
+}
+
+.item-phone{
+  font-size:1em;
+}
+
+.item-rating{
+  font-size:1em;
+}
+
+.fav-btn{
+  position:absolute;
+  top:5%;
+  right:5%;
+  height:12%;
+  transform:scale(1);
+  transition:transform .3s ease-in;
+}
+
+.fav-btn:hover{
+  transform:scale(1.2);
+}
+
+.item-information > img{
+  /* height:300px; */
+  width:100%;
+  opacity:.5;
+}
+
+.item-image{
+  height:300px;
+  /*width:100%;*/
+}
+
+.swish-list-item > div.col-lg-4{
+  padding:0;
+}

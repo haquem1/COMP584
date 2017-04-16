@@ -1,0 +1,35 @@
+.swish-search-results{
+  height:7vh;
+  width:100%;
+  background-color:#F6BF33;
+  position:relative;
+}
+
+.location_results_img{
+  height:80%;
+  margin:10px; 
+}
+
+.search-city, .search-food{
+  font-family:raleway;
+  font-size:1.5em;
+  text-transform: capitalize;
+  color:white;
+
+}
+
+.search-city{
+  text-align:left;
+}
+
+.search-food{
+  text-align:right;
+}
+
+.dec-pointer{
+  position:absolute;
+  top:99%;
+  left:50%;
+  transform:translate(-50%, 0%);
+  height:80%;
+}
