@@ -20,12 +20,12 @@
 
         function login() {
             AuthenticationService.Login(vm.username, vm.password, function (result) {
-                
+
                 if (result === true) {
                     $location.path('/'); // login
                 } else {
                     vm.error = 'Username or password is incorrect';
-                    
+
                     document.getElementById("errorDisplay").innerHTML = vm.error;
                     document.getElementById("errorDisplay").style.display = "block";
                 }
@@ -38,8 +38,8 @@
                 if (result === true) {
                     $location.path('/'); // login
                 } else {
-                    vm.error = 'Username or password is incorrect';
-                    
+                    vm.error = 'User already exists';
+
                     document.getElementById("errorDisplay").innerHTML = vm.error;
                     document.getElementById("errorDisplay").style.display = "block";
 
@@ -47,7 +47,7 @@
             });
           } else {
             vm.error = 'Passwords do not match'
-        
+
             document.getElementById("errorDisplay").innerHTML = vm.error;
             document.getElementById("errorDisplay").style.display = "block";
           }
