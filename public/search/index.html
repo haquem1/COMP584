@@ -17,61 +17,73 @@
 </head>
 <body>
 
+
+
+
+
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <!-- NAVIGATION BAR MODULE -->
+  <!-- NAVIGATION BAR MODULE & SEARCH FIELD VALUES-->
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <link rel="stylesheet" href="./navigation_bar.css">
-  <section class="swish-nav">
-    <p class="swish-nav-logo">swish</p>
-    
-    <div class="swish-search-fields">
+  <link rel="stylesheet" href="./css/navigation_bar.css">
+  <div class="container-fluid">
+    <!-- NAVIGATION BAR -->
+    <section class="swish-nav">
+      <p class="swish-nav-logo">swish</p>
+
+      <div class="swish-search-fields">
+        <div class="row">
+          <!-- FIRST INPUT GROUP -->
+          <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">
+                <img src="../assets/img/navigation_bar/search.svg" alt="desired food searched">
+              </span>
+              <input type="text" class="form-control" placeholder="Search Food..." aria-describedby="Enter desired food">
+            </div>    
+          </div>
+
+          <!-- SECOND INPUT GROUP -->
+          <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon2s">
+                <img src="../assets/img/navigation_bar/location.svg" alt="desired location icon">
+              </span>
+              <input type="text" class="form-control" placeholder="Location..." aria-describedby="nearby locations">
+            </div>    
+          </div>
+        </div>
+      </div>
+      <img class="swish-nav-menu-btn" src="../assets/img/navigation_bar/menu.svg" alt="navigation bar menu button">
+    </section>
+
+    <!-- SEARCH FIELDS -->
+    <div class="swish-search-values">
       <div class="row">
+        <div class="col-lg-12">
+          <img class="pointy" src="../assets/img/search_results_bar/pointy.svg" alt="fancy indicator image">
+          
+          <div class="swish-search-bar">
+            <img class="results-icon" src="../assets/img/search_results_bar/result.svg" alt="search result icon">
+            
+            <div class="left-outer-container">
+              <div class="left-inner-container">
+                <p class="food-searched">Tasty Chicken</p>
+              </div>
+            </div>
+            
 
-        <div class="col-lg-6">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">
-              <img src="../assets/img/navigation_bar/search.svg" alt="desired food searched">
-            </span>
-            <input type="text" class="form-control" placeholder="Search Food..." aria-describedby="Enter desired food">
-          </div>    
-        </div>
-
-        <div class="col-lg-6">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon2s">
-              <img src="../assets/img/navigation_bar/location.svg" alt="desired location icon">
-            </span>
-            <input type="text" class="form-control" placeholder="Location..." aria-describedby="nearby locations">
-          </div>    
+            <div class="right-outer-container">
+              <div class="right-inner-container">
+                <p class="location-searched">Los Angeles, CA</p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
+  </div>
 
-    <img class="swish-nav-menu-btn" src="../assets/img/navigation_bar/menu.svg" alt="navigation bar menu button">
-  </section>
-
-
-
-
-  <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <!-- SEARCH FIELD MODULE -->
-  <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <link rel="stylesheet" href="./search_results_bar.css">
-  <section class="swish-search-results">
-    <img class="dec-pointer" src="../assets/img/search_results_bar/pointy.svg" alt="just a pointy thing">
-    <div class="row">
-      <div class="col-lg-5 text-right">
-        <p class="search-food">chimichangas</p>
-      </div>
-      <div class="col-lg-2 text-center">
-        <img class="location_results_img" src="../assets/img/search_results_bar/result.svg" alt="location results for food">
-      </div>
-      <div class="col-lg-5 text-left">
-        <p class="search-city">Los Angeles, CA</p>
-      </div>
-    </div>
-  </section>
 
 
 
@@ -80,7 +92,7 @@
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
   <!-- LIST MODULE -->
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <link rel="stylesheet" href="./list_result.css">
+  <link rel="stylesheet" href="./css/list_result.css">
   <section class="swish-list-area">
     <div class="container">
       <div class="row">
@@ -117,23 +129,31 @@
       </div>
     </div>
   </section>
-  
+
+
+
+
+
+
+
+
+
+
 
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
   <!-- CARD MODULE -->
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <link rel="stylesheet" href="./card_result.css">
+  <link rel="stylesheet" href="./css/card_result.css">
   <section class="swish-card-area">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
           <div class="swish-card-item">
 
             <section class="card-item-information">
               <img src="../assets/img/search_list_item/sample1.jpg" alt="food sample 1">
-
               <!-- |||||||||||||||||||||||||||| -->
-              <!-- -->
+              <!-- INFORMATION CONTAINER-->
               <!-- |||||||||||||||||||||||||||| -->
               <div class="card-item-info-container">
                 <p class="card-item-name">pollop coll</p>
@@ -163,13 +183,13 @@
                   </a>
                 </div>
               </div>              
-              
+
 
             </section>
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
           <div class="swish-card-item">
 
             <section class="card-item-information">
@@ -206,13 +226,13 @@
                   </a>
                 </div>
               </div>              
-              
+
 
             </section>
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
           <div class="swish-card-item">
 
             <section class="card-item-information">
@@ -249,7 +269,7 @@
                   </a>
                 </div>
               </div>              
-              
+
 
             </section>
           </div>
@@ -257,6 +277,17 @@
       </div>
     </div>
   </section>
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
