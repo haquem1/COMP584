@@ -1,5 +1,6 @@
 
   <div class="login-page" ng-cloak>
+
     <style>
         @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
@@ -117,12 +118,16 @@
     </style>
 
     <div id="title">SWISH</div>
+     
+
     <div class="form">
       <form class="register-form" ng-submit="vm.register()">
+
         <h2>Register</h2>
         <input name="username" type="text" placeholder="username" ng-model="vm.username" required/>
         <input name="password" type="password" placeholder="password" ng-model="vm.password" required/>
         <input name="confirm" type="password" placeholder="confirm password" ng-model="vm.confirm" required/>
+
         <button>create</button>
         <p class="message">Already registered? <a href="#">Sign In</a></p>
       </form>
