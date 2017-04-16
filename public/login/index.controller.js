@@ -25,7 +25,9 @@
                     $location.path('/'); // login
                 } else {
                     vm.error = 'Username or password is incorrect';
-                    alert(vm.error);
+                    
+                    document.getElementById("errorDisplay").innerHTML = vm.error;
+                    document.getElementById("errorDisplay").style.display = "block";
                 }
             });
         };
@@ -37,13 +39,17 @@
                     $location.path('/'); // login
                 } else {
                     vm.error = 'Username or password is incorrect';
-                    alert(vm.error);
+                    
+                    document.getElementById("errorDisplay").innerHTML = vm.error;
+                    document.getElementById("errorDisplay").style.display = "block";
 
                 }
             });
           } else {
             vm.error = 'Passwords do not match'
-            alert(vm.error);
+        
+            document.getElementById("errorDisplay").innerHTML = vm.error;
+            document.getElementById("errorDisplay").style.display = "block";
           }
         };
     }

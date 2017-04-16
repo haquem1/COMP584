@@ -118,10 +118,13 @@
     </style>
 
     <div id="title">SWISH</div>
+    
+    <div class="alert alert-danger" id = "errorDisplay" role="alert" style = "display:none"></div>
      
 
     <div class="form">
       <form class="register-form" ng-submit="vm.register()">
+
 
         <h2>Register</h2>
         <input name="username" type="text" placeholder="username" ng-model="vm.username" required/>
