@@ -28,7 +28,7 @@ app.use('/', require('./routes'));
 
 // redirect to route if doesn't exist
 app.get('*', function(req, res, next){
-  return res.redirect(req.get('Host'));
+  return res.redirect([req.get('Host')].join(''));
 });
 
 module.exports = app;
