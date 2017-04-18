@@ -24,7 +24,7 @@
                   price: price
               },
               headers: {
-                Authorization: $localStorage
+                Authorization: $localStorage.currentUser.token
               }
             })
                 .success(function (response) {
@@ -40,7 +40,7 @@
         }
 
         function Business(business) {
-            $http.get('/business', { params: { id: business }}, {headers: {Authorization: $localStorage}})
+            $http.get('/business', { params: { id: business }}, {headers: {Authorization: $localStorage.currentUser.token}})
                 .success(function (response) {
                     // login successful if there's a token in the response
                     if (response.data) {
