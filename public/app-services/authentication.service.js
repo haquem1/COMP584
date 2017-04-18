@@ -19,10 +19,16 @@
                 .success(function (response) {
                     // register successful if response returns success boolean
                     if (response.success) {
-                        // execute callback with true to indicate successful registration
-                        Login(username, password, callback);
+                        // store username and token in local storage to keep user logged in between page refreshes
+                        $localStorage.currentUser = { name: username, token: response.token };
+
+                        // add jwt token to auth header for all requests made by the $http service
+                        $http.defaults.headers.common.Authorization = 'Bearer ' + response.token;
+
+                        // execute callback with true to indicate successful login
+                        callback(true);
                     } else {
-                        // execute callback with false to indicate failed registration
+                        // execute callback with false to indicate failed login
                         callback(false);
                     }
                 });
