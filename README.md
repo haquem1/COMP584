@@ -22,7 +22,7 @@ In the above, "latest" denotes version number. It's a string. I set it to latest
 The project also makes use of environment variables. A template is included in the repository but, the actual values has been distributed to the team via our team Slack.
 
 ## Run the server
-To run this server on our local machine, in the root of the project directory run <br> ```npm start```
+To run this server on our local machine, in the root of the project directory run <br> ```npm start``` I recommend using nodemon for local environment which can be used with ```npm run dev```
 
 It will start the application and you should be able to navigate to ```http://localhost:8080/``` <br>for the base URL to our API if running on your local machine.
 
