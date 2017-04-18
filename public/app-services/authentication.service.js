@@ -21,7 +21,6 @@
                     if (response.success) {
                         // execute callback with true to indicate successful registration
                         Login(username, password, callback);
-                        // callback(true);
                     } else {
                         // execute callback with false to indicate failed registration
                         callback(false);

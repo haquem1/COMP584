@@ -27,7 +27,7 @@ routes.get('/memberinfo', function(req, res) {
   authHandler.protect(req, res, 0);
 }, passport.authenticate('jwt', { session: false}));
 
-routes.get('/search/:location', function(req, res) {
+routes.get('/search/:location/:term', function(req, res) {
   authHandler.protect(req, res, 1);
 }, passport.authenticate('jwt', { session: false}));
 
