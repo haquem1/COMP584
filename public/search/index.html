@@ -53,7 +53,60 @@
           </div>
         </div>
       </div>
-      <img class="swish-nav-menu-btn" src="../assets/img/navigation_bar/menu.svg" alt="navigation bar menu button">
+
+      <img class="swish-nav-logout-btn" src="../assets/img/navigation_bar/logout.svg" alt="navigation bar menu button" data-toggle="tooltip" data-placement="bottom" title="Logout">
+      <img class="swish-nav-menu-btn" src="../assets/img/navigation_bar/menu.svg" alt="navigation bar menu button" data-toggle="tooltip" data-placement="bottom" title="Menu">
+    </section>
+
+    <!-- HIDDEN NAVIGATION MENU -->
+    <section class="swish-nav-menu">
+
+      <!-- PRICE RANGE SELECTOR -->
+      <div class="price-range-container">
+        <div class="row text-center">
+          <p class="price-range-title">select price range</p>
+          <label class="checkbox-inline">
+            <input type="radio" id="inlineCheckbox1" value="1"> $
+          </label>
+          <label class="checkbox-inline">
+            <input type="radio" id="inlineCheckbox2" value="2"> $$
+          </label>
+          <label class="checkbox-inline">
+            <input type="radio" id="inlineCheckbox3" value="3"> $$$
+          </label>
+          <label class="checkbox-inline">
+            <input type="radio" id="inlineCheckbox3" value="4"> $$$$
+          </label>
+        </div>
+      </div>
+
+      <!-- CATEGORIES DROPDOWN -->
+      <div class="category-selection-container">
+        <div class="row text-center">
+          <p class="price-range-title">desired category</p>
+          <div class="btn-group">
+            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              looks bad right now, I know<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>test1</li>
+              <li>test2</li>
+              <li>test3</li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+      
+      <!-- LOGOUT BUTTON -->
+      <div class="logout-btn-container">
+        <div class="row text-center">
+          <img src="../assets/img/navigation_bar/logout.svg" alt="logout button" class="hidden-menu-logout-btn">
+          <p class="hidden-logout-btn">logout</p>  
+        </div>
+      </div>
+
+
+
     </section>
 
     <!-- SEARCH FIELDS -->
@@ -61,16 +114,16 @@
       <div class="row">
         <div class="col-lg-12">
           <img class="pointy" src="../assets/img/search_results_bar/pointy.svg" alt="fancy indicator image">
-          
+
           <div class="swish-search-bar">
             <img class="results-icon" src="../assets/img/search_results_bar/result.svg" alt="search result icon">
-            
+
             <div class="left-outer-container">
               <div class="left-inner-container">
                 <p class="food-searched">Tasty Chicken</p>
               </div>
             </div>
-            
+
 
             <div class="right-outer-container">
               <div class="right-inner-container">
@@ -83,6 +136,7 @@
       </div>
     </div>
   </div>
+
 
 
 
@@ -290,7 +344,10 @@
 
 
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script>
@@ -298,6 +355,8 @@
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
+  <script src="./js/navigation_bar.js"></script>
+
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
 </body>
 </html>
