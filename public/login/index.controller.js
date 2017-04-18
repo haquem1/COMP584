@@ -20,7 +20,6 @@
 
         function login() {
             AuthenticationService.Login(vm.username, vm.password, function (result) {
-
                 if (result === true) {
                     $location.path('/'); // login
                 } else {

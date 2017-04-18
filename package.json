@@ -3,6 +3,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node -r dotenv/config ./bin/www",
+    "dev": "nodemon -r dotenv/config ./bin/www",
     "deploy": "git push heroku master"
   },
   "dependencies": {
@@ -18,5 +19,9 @@
     "passport": "^0.3.0",
     "passport-jwt": "^1.2.1",
     "yelp-api-v3": "https://github.com/haquem1/yelp-api-v3.git"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "nodemon": "^1.11.0"
   }
 }

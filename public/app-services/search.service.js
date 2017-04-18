@@ -13,7 +13,7 @@
 
         return service;
 
-        function Search(term, location, callback) {
+        function Search(term, location, categories, price, callback) {
             $http.get('/search', {
               params: {
                 term: term,
@@ -30,7 +30,7 @@
                 .success(function (response) {
                     // register successful if response returns success boolean
                     if (response.data) {
-                        // execute callback with true to indicate successful search
+                        // return callback to indicate successful search
                         return response.data;
                     } else {
                         // execute callback with false to indicate failed search
@@ -44,7 +44,7 @@
                 .success(function (response) {
                     // login successful if there's a token in the response
                     if (response.data) {
-
+                        // return callback to indicate successful search
                         return response.data;
                     } else {
                         // execute callback with false to indicate failed business search
