@@ -23,8 +23,13 @@
   top:50%;
   left:3%;
   transform: translate(0%, -50%);
-
+  transition: all .5s linear;
   /*need to add mobile device rules*/
+}
+
+.swish-nav-logo:hover{
+  color:#F6BF33;
+  border:3px solid #F6BF33;
 }
 
 .swish-nav-menu-btn{
@@ -32,8 +37,16 @@
   top:50%;
   right:3%;
   transform: translate(0%, -50%);
-  height:30%;
+  height:25%;
+  /*need to add mobile device rules*/
+}
 
+.swish-nav-logout-btn{
+  position:absolute;
+  top:50%;
+  right:6.5%;
+  transform: translate(0%, -50%);
+  height:40%;
   /*need to add mobile device rules*/
 }
 
@@ -67,6 +80,69 @@
   font-family:raleway;
   font-size:1.2em;
 }
+/*||||||||||||||||||||||||||||||||||*/
+/*END OF SECTION*/
+/*||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||*/
+/*SWISH HIDDEN NAVIGATION MENU RULES */
+/*||||||||||||||||||||||||||||||||||||*/
+.swish-nav-menu{
+  position:absolute;
+  height:auto;
+  min-height:50vh;
+  width:25vw;
+  top:10vh;
+  right:0;
+  z-index:99;
+  padding:0;
+  margin:0;
+
+  background-color:rgba(74, 91,99,.75);
+}
+
+.price-range-container{
+
+}
+
+.price-range-title{
+  font-family:raleway;
+  font-size:1.5em;
+  color:white;
+  text-transform:capitalize;
+}
+
+.logout-btn-container{
+}
+
+.hidden-logout-btn{
+  display:inline-block;
+  font-family:raleway;
+  font-size:1.5em;;
+  color:white;
+  text-transform:capitalize;
+}
+
+.hidden-menu-logout-btn{
+  height:50px;
+}
+
+.checkbox-inline{
+  font-family:raleway;
+  font-size:1.5em;
+  color:white;
+}
+
+
+
+/*||||||||||||||||||||||||||||||||||*/
+/*END OF SECTION*/
+/*||||||||||||||||||||||||||||||||||*/
+
 
 
 
@@ -143,5 +219,6 @@
   padding:0;
   margin:0 20px;
 }
-
-
+/*||||||||||||||||||||||||||||||||||*/
+/*END OF SECTION*/
+/*||||||||||||||||||||||||||||||||||*/
