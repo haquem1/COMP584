@@ -12,8 +12,8 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'home/index.view.html',
-                controller: 'Home.IndexController',
+                templateUrl: 'search/index.view.html',
+                controller: 'Search.IndexController',
                 controllerAs: 'vm'
             })
             .state('login', {

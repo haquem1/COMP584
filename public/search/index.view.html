@@ -6,17 +6,9 @@
   <!-- SCROLLS -->
   <!-- load bootstrap and fontawesome via CDN -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css"/>
 
-
-  <!-- SPELLS -->
-  <!-- load angular and angular route via CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
 </head>
 <body>
-
 
 
 
@@ -24,8 +16,8 @@
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
   <!-- NAVIGATION BAR MODULE & SEARCH FIELD VALUES-->
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/navigation_bar.css">
+  <link rel="stylesheet" href="search/css/main.css">
+  <link rel="stylesheet" href="search/css/navigation_bar.css">
   <div class="swish-app-wrapper">
 
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
@@ -45,7 +37,7 @@
                   <img src="../assets/img/navigation_bar/search.svg" alt="desired food searched">
                 </span>
                 <input type="text" class="form-control" placeholder="Search Food..." aria-describedby="Enter desired food">
-              </div>    
+              </div>
             </div>
 
             <!-- SECOND INPUT GROUP -->
@@ -55,12 +47,12 @@
                   <img src="../assets/img/navigation_bar/location.svg" alt="desired location icon">
                 </span>
                 <input type="text" class="form-control" placeholder="Location..." aria-describedby="nearby locations">
-              </div>    
+              </div>
             </div>
           </div>
         </div>
 
-        <img class="swish-nav-logout-btn" src="../assets/img/navigation_bar/logout.svg" alt="navigation bar menu button" data-toggle="tooltip" data-placement="bottom" title="Logout">
+        <a href="/login>"<img class="swish-nav-logout-btn" src="../assets/img/navigation_bar/logout.svg" alt="navigation bar menu button" data-toggle="tooltip" data-placement="bottom" title="Logout"></a>
         <img class="swish-nav-menu-btn" src="../assets/img/navigation_bar/menu.svg" alt="navigation bar menu button" data-toggle="tooltip" data-placement="bottom" title="Menu">
       </section>
 
@@ -100,14 +92,14 @@
                 <li>test3</li>
               </ul>
             </div>
-          </div>  
+          </div>
         </div>
 
         <!-- LOGOUT BUTTON -->
         <div class="logout-btn-container">
           <div class="row text-center">
             <img src="../assets/img/navigation_bar/logout.svg" alt="logout button" class="hidden-menu-logout-btn">
-            <p class="hidden-logout-btn">logout</p>  
+            <a href="/login"><p class="hidden-logout-btn">logout</p></a>
           </div>
         </div>
       </section>
@@ -146,7 +138,7 @@
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <!-- HOMEPAGE LOOK-A-LIKE FILLER  -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <link rel="stylesheet" href="./css/homepage_elements.css">
+    <link rel="stylesheet" href="search/css/homepage_elements.css">
     <div id="homepage-elements" class="container-fluid">
       <!-- HOMEPAGE BANNER SECTION -->
       <div class="row">
@@ -174,7 +166,7 @@
               <div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2">
                 <p class="information-body">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloremque error maxime odit, voluptate veritatis eveniet suscipit iure earum labore quaerat animi repellendus sed dicta molestias perspiciatis voluptates fugit rem!
-                </p>                
+                </p>
               </div>
             </div>
 
@@ -190,7 +182,7 @@
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <!-- LIST MODULE -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <link rel="stylesheet" href="./css/list_result.css">
+    <link rel="stylesheet" href="search/css/list_result.css">
     <section class="swish-list-area">
       <div class="container">
         <div class="row">
@@ -201,7 +193,7 @@
                 <div class="col-sm-6 col-lg-4">
 
                   <section class="item-information">
-                    <img src="../assets/img/search_list_item/sample1.jpg" alt="food sample 1">
+                    <img src="assets/img/search_list_item/sample1.jpg" alt="food sample 1">
                     <div class="item-info-container">
                       <p class="item-name">pollop coll</p>
                       <p class="item-address">6421 selma ave los angeles, CA 90028</p>
@@ -209,16 +201,16 @@
                       <p class="item-rating">4 stars</p>
                     </div>
                     <div class="add-btn-container">
-                      <img class="fav-btn" data-toggle="tooltip" data-placement="left" title="Add to favorite" src="../assets/img/search_list_item/add.svg" alt="">  
+                      <img class="fav-btn" data-toggle="tooltip" data-placement="left" title="Add to favorite" src="assets/img/search_list_item/add.svg" alt="">
                     </div>
                   </section>
 
                 </div>
                 <div class="col-sm-3 col-lg-4">
-                  <img class="item-image" src="../assets/img/search_list_item/sample3.jpg" alt="food sample 2">
+                  <img class="item-image" src="assets/img/search_list_item/sample3.jpg" alt="food sample 2">
                 </div>
                 <div class="col-sm-3 col-lg-4">
-                  <img class="item-image" src="../assets/img/search_list_item/sample2.jpg" alt="food sample 3">
+                  <img class="item-image" src="assets/img/search_list_item/sample2.jpg" alt="food sample 3">
                 </div>
               </div>
             </div>
@@ -234,7 +226,7 @@
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <!-- CARD MODULE -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <link rel="stylesheet" href="./css/card_result.css">
+    <link rel="stylesheet" href="search/css/card_result.css">
     <section class="swish-card-area">
       <div class="container">
         <div class="row">
@@ -242,7 +234,7 @@
             <div class="swish-card-item">
 
               <section class="card-item-information">
-                <img src="../assets/img/search_list_item/sample1.jpg" alt="food sample 1">
+                <img src="assets/img/search_list_item/sample1.jpg" alt="food sample 1">
                 <!-- |||||||||||||||||||||||||||| -->
                 <!-- INFORMATION CONTAINER-->
                 <!-- |||||||||||||||||||||||||||| -->
@@ -257,7 +249,7 @@
                 <!-- REMOVE CARD BTN -->
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="rem-btn-container">
-                  <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="../assets/img/search_card_item/remove.svg" alt="">  
+                  <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="assets/img/search_card_item/remove.svg" alt="">
                 </div>
 
                 <!-- |||||||||||||||||||||||||||| -->
@@ -265,15 +257,15 @@
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="card-btn-container">
                   <div class="row text-center">
-                    <img class="card-btn" src="../assets/img/search_card_item/clock.svg" alt="restaurant hours">
+                    <img class="card-btn" src="assets/img/search_card_item/clock.svg" alt="restaurant hours">
 
                     <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator">
                     <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
                     <a href="#!URL">
-                      <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="../assets/img/search_card_item/yelp.svg" alt="">
+                      <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="assets/img/search_card_item/yelp.svg" alt="">
                     </a>
                   </div>
-                </div>              
+                </div>
 
 
               </section>
@@ -284,7 +276,7 @@
             <div class="swish-card-item">
 
               <section class="card-item-information">
-                <img src="../assets/img/search_list_item/sample1.jpg" alt="food sample 1">
+                <img src="assets/img/search_list_item/sample1.jpg" alt="food sample 1">
 
                 <!-- |||||||||||||||||||||||||||| -->
                 <!-- -->
@@ -300,7 +292,7 @@
                 <!-- REMOVE CARD BTN -->
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="rem-btn-container">
-                  <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="../assets/img/search_card_item/remove.svg" alt="">  
+                  <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="assets/img/search_card_item/remove.svg" alt="">
                 </div>
 
                 <!-- |||||||||||||||||||||||||||| -->
@@ -308,15 +300,15 @@
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="card-btn-container">
                   <div class="row text-center">
-                    <img class="card-btn" src="../assets/img/search_card_item/clock.svg" alt="restaurant hours">
+                    <img class="card-btn" src="assets/img/search_card_item/clock.svg" alt="restaurant hours">
 
-                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator">
+                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="assets/img/search_card_item/open.svg" alt="open restaurant indicator">
                     <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
                     <a href="#!URL">
-                      <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="../assets/img/search_card_item/yelp.svg" alt="">
+                      <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="assets/img/search_card_item/yelp.svg" alt="">
                     </a>
                   </div>
-                </div>              
+                </div>
 
 
               </section>
@@ -327,7 +319,7 @@
             <div class="swish-card-item">
 
               <section class="card-item-information">
-                <img src="../assets/img/search_list_item/sample1.jpg" alt="food sample 1">
+                <img src="assets/img/search_list_item/sample1.jpg" alt="food sample 1">
 
                 <!-- |||||||||||||||||||||||||||| -->
                 <!-- -->
@@ -343,7 +335,7 @@
                 <!-- REMOVE CARD BTN -->
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="rem-btn-container">
-                  <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="../assets/img/search_card_item/remove.svg" alt="">  
+                  <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="assets/img/search_card_item/remove.svg" alt="">
                 </div>
 
                 <!-- |||||||||||||||||||||||||||| -->
@@ -351,15 +343,15 @@
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="card-btn-container">
                   <div class="row text-center">
-                    <img class="card-btn" src="../assets/img/search_card_item/clock.svg" alt="restaurant hours">
+                    <img class="card-btn" src="assets/img/search_card_item/clock.svg" alt="restaurant hours">
 
-                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator">
+                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="assets/img/search_card_item/open.svg" alt="open restaurant indicator">
                     <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
                     <a href="#!URL">
-                      <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="../assets/img/search_card_item/yelp.svg" alt="">
+                      <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="assets/img/search_card_item/yelp.svg" alt="">
                     </a>
                   </div>
-                </div>              
+                </div>
 
 
               </section>
@@ -374,19 +366,13 @@
   </div>
 
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function(){
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
-  <script src="./js/navigation_bar.js"></script>
-  <script src="./js/view_selection.js"></script>
+  <script src="search/js/navigation_bar.js"></script>
+  <script src="search/js/view_selection.js"></script>
 
   <!-- ||||||||||||||||||||||||||||||||||||||| -->
 </body>
