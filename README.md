@@ -48,14 +48,6 @@ returns status with either web token or message
 /authenticate
 ```
 
-#### Member Area
-GET<br><br>
-set Authorization in header to returned token value from authenticate api
-returns status and message
-```
-/memberinfo
-```
-
 #### Restaurant Search
 GET<br><br>
 
