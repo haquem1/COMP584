@@ -1,6 +1,7 @@
 .swish-list-area{
   background-color:#F5F5F5;
   height:auto;
+  display:none;
   min-height:auto;
 }
 

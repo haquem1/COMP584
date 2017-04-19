@@ -1,0 +1,49 @@
+/*|||||||||||||||||||||||||||||||||||||*/
+/*SWISH BANNER SECTION*/
+/*|||||||||||||||||||||||||||||||||||||*/
+.swish-banner-section{
+  width:100%;
+  height:50vh;
+  background-image:url("../../assets/img/homepage/background4.jpg");
+  /*background-size:50%;*/
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:left;
+  position:relative;
+}
+
+.swish-welcome-message{
+  font-family:raleway;
+  color:white;
+  font-size:3em;
+
+  position:absolute;
+  top:50%;
+  right:0%;
+  width:50%;
+  text-align:center;
+
+}
+
+
+
+
+/*|||||||||||||||||||||||||||||||||||||*/
+/*SWISH INFORMATION SECTION*/
+/*|||||||||||||||||||||||||||||||||||||*/
+.swish-information{
+  margin-top:2%;
+}
+
+.information-header{
+  font-family:raleway;
+  font-weight:bold;
+  border:2px solid rgba(0,0,0,.5);
+  padding:1%;
+  font-size:2em;
+}
+
+.information-body{
+  font-family:raleway;
+  font-size:1.5em;
+}

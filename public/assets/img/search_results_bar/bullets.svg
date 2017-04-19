@@ -1,0 +1,24 @@
+<svg width="42" height="23" viewBox="0 0 42 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>bullets</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-3899 -191)" figma:type="canvas">
+<g id="bullets" figma:type="frame">
+<g id="Group" figma:type="frame">
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(3899 191)" fill="#FFFFFF"/>
+</g>
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(3899 201.409)" fill="#FFFFFF"/>
+</g>
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(3899 212.034)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 42 0L 0 0L 0 1.96629L 42 1.96629L 42 0Z"/>
+<path id="path1_fill" d="M 42 0L 0 0L 0 1.96629L 42 1.96629L 42 0Z"/>
+<path id="path2_fill" d="M 42 0L 0 0L 0 1.96552L 42 1.96552L 42 0Z"/>
+</defs>
+</svg>

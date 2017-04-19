@@ -1,0 +1,11 @@
+.navbar{
+  background-color:#4a5b63;
+}
+
+.navbar-brand{
+  font-family:arial;
+  font-size:1.5em;
+  color:white !important;
+  text-transform:uppercase;
+  border:2px solid white;
+}

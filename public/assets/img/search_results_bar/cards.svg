@@ -1,0 +1,23 @@
+<svg width="49" height="48" viewBox="0 0 49 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>cards</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-3981 -179)" figma:type="canvas">
+<g id="cards" figma:type="frame">
+<g id="Group" figma:type="frame">
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(3986.98 184.887)" fill="#FFFFFF"/>
+</g>
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(3993.39 179)" fill="#FFFFFF"/>
+</g>
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(3981 190.802)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 35.74 0L 0.8667 0C 0.388137 0 -2.60088e-07 0.383803 -2.60088e-07 0.857022L -2.60088e-07 3.3421C -2.60088e-07 3.81532 0.388137 4.19912 0.8667 4.19912C 1.34526 4.19912 1.7334 3.81532 1.7334 3.3421L 1.7334 1.71404L 34.8733 1.71404L 34.8733 34.4839L 33.2268 34.4839C 32.7483 34.4839 32.3601 34.8677 32.3601 35.3409C 32.3601 35.8141 32.7483 36.1979 33.2268 36.1979L 35.74 36.1979C 36.2185 36.1979 36.6067 35.8141 36.6067 35.3409L 36.6067 0.857022C 36.6067 0.383803 36.2185 0 35.74 0Z"/>
+<path id="path1_fill" d="M 35.74 -2.57183e-07L 0.8667 -2.57183e-07C 0.388137 -2.57183e-07 0 0.383803 0 0.857022L 0 35.3409C 0 35.8141 0.388137 36.1979 0.8667 36.1979L 35.74 36.1979C 36.2185 36.1979 36.6067 35.8141 36.6067 35.3409L 36.6067 0.857022C 36.6067 0.383803 36.2185 -2.57183e-07 35.74 -2.57183e-07ZM 34.8733 34.4839L 1.7334 34.4839L 1.7334 1.71404L 34.8733 1.71404L 34.8733 34.4839Z"/>
+</defs>
+</svg>

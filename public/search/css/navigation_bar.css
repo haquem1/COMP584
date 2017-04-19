@@ -6,6 +6,8 @@
   height:10vh;
   background-color:#4A5B63;
   position:relative;
+  box-shadow:2px 4px 2px rgba(0,0,0,.35);
+  z-index:1;
 }
 
 .swish-nav-logo{
@@ -97,16 +99,12 @@
   min-height:50vh;
   width:25vw;
   top:10vh;
-  right:0;
+  right:-25vw;
   z-index:99;
   padding:0;
   margin:0;
 
   background-color:rgba(74, 91,99,.75);
-}
-
-.price-range-container{
-
 }
 
 .price-range-title{
@@ -116,7 +114,16 @@
   text-transform:capitalize;
 }
 
+.price-range-container{
+  margin-top:5%;
+}
+
+.category-selection-container{
+  margin-top:5%;
+}
+
 .logout-btn-container{
+  margin-top:5%;
 }
 
 .hidden-logout-btn{
@@ -166,6 +173,7 @@
   bottom:0;
   left:50%;
   transform:translate(-50%, 50%);
+  z-index:1;
 }
 
 .results-icon{
@@ -174,6 +182,7 @@
   top:15%;
   left:50%;
   transform:translate(-50%, 0);
+  z-index:2;
 }
 
 .left-outer-container{
@@ -203,6 +212,7 @@
   top:50%;
   right:5%;
   transform:translate(0%, -50%);
+  z-index:2;
 }
 
 .right-inner-container{
@@ -210,6 +220,7 @@
   top:50%;
   left:5%;
   transform:translate(0%, -50%);
+  z-index:2;
 }
 
 .food-searched, .location-searched{
@@ -218,6 +229,26 @@
   font-size:1.5em;
   padding:0;
   margin:0 20px;
+}
+
+.search-result-list{
+  height:40%;
+  position:absolute;
+  top:50%;
+  right:5%;
+  transform:translate(0%, -50%);
+}
+
+.search-result-list:hover, .user-fav-cards{
+  cursor:pointer;
+}
+
+.user-fav-cards{
+  height:60%;
+  position:absolute;
+  top:50%;
+  right:2%;
+  transform:translate(0%, -50%);
 }
 /*||||||||||||||||||||||||||||||||||*/
 /*END OF SECTION*/
