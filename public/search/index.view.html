@@ -1,25 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Swish</title>
-  <!-- SCROLLS -->
-  <!-- load bootstrap and fontawesome via CDN -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-</head>
-<body>
-
-
-
-
-  <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <!-- NAVIGATION BAR MODULE & SEARCH FIELD VALUES-->
-  <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <link rel="stylesheet" href="search/css/main.css">
-  <link rel="stylesheet" href="search/css/navigation_bar.css">
   <div class="swish-app-wrapper">
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- ||||||||||||||||||||||||||||||||||||||| -->
+    <!-- NAVIGATION BAR MODULE & SEARCH FIELD VALUES-->
+    <!-- ||||||||||||||||||||||||||||||||||||||| -->
+    <link rel="stylesheet" href="search/css/main.css">
+    <link rel="stylesheet" href="search/css/navigation_bar.css">
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <!-- COMPLETE NAVIGATION BAR -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
@@ -98,8 +83,8 @@
         <!-- LOGOUT BUTTON -->
         <div class="logout-btn-container">
           <div class="row text-center">
-            <img src="../assets/img/navigation_bar/logout.svg" alt="logout button" class="hidden-menu-logout-btn">
-            <a href="/login"><p class="hidden-logout-btn">logout</p></a>
+            <a href="/login"><img src="../assets/img/navigation_bar/logout.svg" alt="logout button" class="hidden-menu-logout-btn"></a>
+            <p class="hidden-logout-btn">logout</p>
           </div>
         </div>
       </section>
@@ -362,18 +347,15 @@
     </section>
 
 
+      <!-- ||||||||||||||||||||||||||||||||||||||| -->
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
+      <script src="search/js/navigation_bar.js"></script>
+      <script src="search/js/view_selection.js"></script>
+
+      <!-- ||||||||||||||||||||||||||||||||||||||| -->
 
   </div>
-
-  <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
-  <script src="search/js/navigation_bar.js"></script>
-  <script src="search/js/view_selection.js"></script>
-
-  <!-- ||||||||||||||||||||||||||||||||||||||| -->
-</body>
-</html>
