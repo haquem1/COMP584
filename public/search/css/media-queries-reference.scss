@@ -1,0 +1,91 @@
+// 5k Styles
+@mixin five-k{
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 5120px){
+    @content;
+  } 
+}
+
+// 4k Styles
+@mixin four-k{
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 3840px){
+    @content;
+  } 
+}
+
+// Mac Book Styles
+@mixin macbook{
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px){
+    @content;
+  } 
+}
+
+// Mac Desktop Styles
+@mixin macdesktop{
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 2300px){
+    @content;
+  } 
+}
+
+@mixin large-retina{
+  @media only screen 
+  and (min-device-width: 3200px) 
+  and (max-device-width: 5000px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    @content;
+  }
+}
+
+// LOW END RES
+/* ----------- Non-Retina Screens ----------- */
+// Mac Book Styles
+@mixin lowend{
+  @media only screen and (min-width: 1280px) and (max-width: 1600px){
+    @content;
+  } 
+}
+
+
+// Ipad Styles
+@mixin ipad{
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){ 
+    @content;
+  } 
+}
+
+/*Styles for Med size screens*/
+@mixin med{
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    @content;
+  } 
+}
+
+/*STYLES FOR SMALL/MOBILE SCREENS */
+@mixin mobile{
+  @media only screen and (max-width: 40em) {
+    @content;
+  } 
+}
+
+
+/*STYLES FOR SMALL/MOBILE SCREENS IN LANDSCAPE MODE*/
+@mixin mobile-landscape{
+  /* Landscape */
+  @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    @content;
+  }
+}
+
+@mixin iphone-landscape{
+  /* Landscape */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    @content;
+  }
+}

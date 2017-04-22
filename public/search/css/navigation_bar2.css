@@ -1,0 +1,191 @@
+.swish-nav-bar-container{
+  background-color:#4A5B63;
+  height:10vh;
+  position:relative;
+}
+
+.swish-nav-brand{
+  font-family:arial;
+  font-size:2em;
+  color:white;
+  text-transform:uppercase;
+  border:2px solid white;
+  display:inline-block;
+  padding:.5%;
+
+  position:absolute;
+  top:50%;
+  left:5%;
+  transform:translate(-50%, -50%) scale(1);
+  transition:all .1s linear;
+}
+
+.swish-nav-brand:hover{
+  color:#F6BF33;
+  border:2px solid #F6BF33;
+  transform:translate(-50%, -50%) scale(1.1);
+}
+
+
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* SEARCH FIELD RULES | START                          */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.search-fields-container{
+  /*border:2px solid green;*/
+  width:50%;
+  position:absolute;
+  top:65%;
+  right:0%;
+  transform:translate(0, -50%);
+}
+
+.input-group-addon{
+  background-color:#F6BF33;
+  border:none;
+  border-radius:50px;
+}
+
+.form-control{
+  border-radius:50px;
+}
+
+.field-icon{
+  height:20px;
+}
+
+.swish-logout{
+  position:absolute;
+  top:-25%;
+  right:38%;
+
+  width:15%;
+}
+
+.swish-menu{
+  position:absolute;
+  top:2%;
+  right:10%;
+
+  width:15%;
+}
+
+.cust-btn{
+  width:100px;
+  background-color:#F6BF33;
+  border-radius:30px;
+  border:none;
+
+  font-family:raleway;
+  font-size:1.2em;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* SEARCH FIELD RULES | END                            */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* CSS RULES FOR MEDIUM SIZED SCREENS: ;                       */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  .swish-nav-brand{
+    left:8%;
+  }
+
+  .search-fields-container{
+    width:80%;
+    position:absolute;
+    top:65%;
+    right:0%;
+    transform:translate(0, -50%);
+
+    /*border:2px solid green;*/
+  }
+
+  .swish-logout{
+    position:absolute;
+    top:-10%;
+    right:30%;
+
+    width:15%;
+  }
+
+  .swish-menu{
+    position:absolute;
+    top:10%;
+    right:8%;
+
+    width:15%;
+  }
+
+
+} 
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* CSS RULES FOR SMALL SIZED SCREEN: ;                         */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media only screen and (max-width: 40em) {
+  .swish-nav-brand{
+    left:50%;
+  }  
+
+  #food-input-field{
+    display:none;
+  }
+
+  #location-input-field{
+    display:none;
+  }
+
+  .swish-logout{
+    display:none;
+  }
+
+  .cust-btn{
+    display:none;
+  }
+
+  .swish-menu{
+    position:absolute;
+    top:5%;
+    right:8%;
+    margin:5% 5% 0 0;
+    width:15%;
+  }
+
+  .search-fields-container{
+    height:100%;
+  }
+} 
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* CSS RULES FOR MAC BOOK PRO SIZE                         */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px){
+  .search-fields-container{
+    width:70%;
+    /*border:2px solid green;*/
+  }
+} 
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* CSS RULES FOR SHITTY RESOLUTION ... I MEAN SMALL RESOLUTIONS                         */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media only screen and (min-width: 1280px) and (max-width: 1600px){
+
+  .search-fields-container{
+    /*border:2px solid green;*/
+    width:70%;
+  }
+
+} 

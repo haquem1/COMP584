@@ -1,127 +1,89 @@
   <div class="swish-app-wrapper">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <!-- NAVIGATION BAR MODULE & SEARCH FIELD VALUES-->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <link rel="stylesheet" href="search/css/main.css">
-    <link rel="stylesheet" href="search/css/navigation_bar.css">
+    <link rel="stylesheet" href="search/css/navigation_bar2.css">
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <!-- COMPLETE NAVIGATION BAR -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <div class="container-fluid">
-      <!-- NAVIGATION BAR -->
-      <section class="swish-nav">
-        <p class="swish-nav-logo">swish</p>
+      <div class="row">
+        <div class="col-lg-12">
 
-        <div class="swish-search-fields">
-          <div class="row">
-            <!-- FIRST INPUT GROUP -->
-            <div class="col-lg-6">
-              <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1">
-                  <img src="../assets/img/navigation_bar/search.svg" alt="desired food searched">
-                </span>
-                <input type="text" class="form-control" placeholder="Search Food..." aria-describedby="Enter desired food">
-              </div>
-            </div>
 
-            <!-- SECOND INPUT GROUP -->
-            <div class="col-lg-6">
-              <div class="input-group">
-                <span class="input-group-addon" id="basic-addon2s">
-                  <img src="../assets/img/navigation_bar/location.svg" alt="desired location icon">
-                </span>
-                <input type="text" class="form-control" placeholder="Location..." aria-describedby="nearby locations">
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <a href="/login"><img class="swish-nav-logout-btn" src="../assets/img/navigation_bar/logout.svg" alt="navigation bar menu button" data-toggle="tooltip" data-placement="bottom" title="Logout"></a>
-        <img class="swish-nav-menu-btn" src="../assets/img/navigation_bar/menu.svg" alt="navigation bar menu button" data-toggle="tooltip" data-placement="bottom" title="Menu">
-      </section>
+          <div class="swish-nav-bar-container">
+            <p class="swish-nav-brand">swish</p>
 
-      <!-- HIDDEN NAVIGATION MENU -->
-      <section class="swish-nav-menu">
 
-        <!-- PRICE RANGE SELECTOR -->
-        <div class="price-range-container">
-          <div class="row text-center">
-            <p class="price-range-title">select price range</p>
-            <label class="checkbox-inline">
-              <input type="radio" id="inlineCheckbox1" value="1"> $
-            </label>
-            <label class="checkbox-inline">
-              <input type="radio" id="inlineCheckbox2" value="2"> $$
-            </label>
-            <label class="checkbox-inline">
-              <input type="radio" id="inlineCheckbox3" value="3"> $$$
-            </label>
-            <label class="checkbox-inline">
-              <input type="radio" id="inlineCheckbox3" value="4"> $$$$
-            </label>
-          </div>
-        </div>
+            <div class="search-fields-container">
+              <div class="row">
+                <form ng-controller="controller_name" ng-submit="submit_function()">
 
-        <!-- CATEGORIES DROPDOWN -->
-        <div class="category-selection-container">
-          <div class="row text-center">
-            <p class="price-range-title">desired category</p>
-            <div class="btn-group">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                looks bad right now, I know<span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li>test1</li>
-                <li>test2</li>
-                <li>test3</li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <!-- LOGOUT BUTTON -->
-        <div class="logout-btn-container">
-          <div class="row text-center">
-            <a href="/login"><img src="../assets/img/navigation_bar/logout.svg" alt="logout button" class="hidden-menu-logout-btn"></a>
-            <p class="hidden-logout-btn">logout</p>
-          </div>
-        </div>
-      </section>
+                  <!-- FOOD SEARCH FIELD -->
+                  <div class="col-sm-4 col-lg-4">
+                    <label id="food-input-field">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <img class="field-icon" src="assets/img/navigation_bar/search.svg" alt="">
+                          </div>
 
-      <!-- SEARCH FIELDS -->
-      <div class="swish-search-values">
-        <div class="row">
-          <div class="col-lg-12">
-            <img class="pointy" src="../assets/img/search_results_bar/pointy.svg" alt="fancy indicator image">
-            <div class="swish-search-bar">
-              <img class="results-icon" src="../assets/img/search_results_bar/result.svg" alt="search result icon">
 
-              <div class="left-outer-container">
-                <div class="left-inner-container">
-                  <p class="food-searched">Discover Foods</p>
-                </div>
+                          <!-- ACTUAL INPUT HERE!!!! -->
+                          <input ng-model="" type="text" class="form-control" id="exampleInputAmount" placeholder="Search Food">
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <!-- FOOD LOCATION FIELD -->
+                  <div class="col-sm-4 col-lg-4">
+                    <label id="location-input-field">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <img class="field-icon" src="assets/img/navigation_bar/location.svg" alt="">
+                          </div>
+
+
+                          <!-- ACTUAL INPUT HERE!!!! -->
+                          <input ng-model="" type="text" class="form-control" id="exampleInputAmount" placeholder="Search Location">
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <!-- SUBMIT BUTTON -->
+                  <div class="col-sm-4 col-lg-4">
+                    <button type="submit" class="cust-btn btn btn-primary">Search</button>
+                    <a href="/login">
+                      <img class="swish-logout" src="assets/img/navigation_bar/logout.svg" alt="logout button" data-toggle="tooltip" data-placement="bottom" title="Logout">
+                    </a>
+                    <img class="swish-menu" src="assets/img/navigation_bar/menu.svg" alt="logout button" data-toggle="tooltip" data-placement="bottom" title="Menu">
+                  </div>
+
+
+                </form>
               </div>
 
-              <div class="right-outer-container">
-                <div class="right-inner-container">
-                  <p class="location-searched">Close To You</p>
-                </div>
-              </div>
-
-              <img class="search-result-list" src="../assets/img/search_results_bar/bullets.svg" alt="user search options" data-toggle="tooltip" data-placement="bottom" title="Search Results">
-              <img class="user-fav-cards" src="../assets/img/search_results_bar/cards.svg" alt="user favorite spots" data-toggle="tooltip" data-placement="bottom" title="Your Favorities">
-
             </div>
-          </div>
 
+          </div>      
+
+
+          
         </div>
       </div>
     </div>
 
 
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <!-- HOMEPAGE LOOK-A-LIKE FILLER  -->
+    <!-- HOMEPAGE LOOK-A-LIKE FILLER             -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <link rel="stylesheet" href="search/css/homepage_elements.css">
     <div id="homepage-elements" class="container-fluid">
@@ -165,7 +127,7 @@
 
 
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <!-- LIST MODULE -->
+    <!-- LIST MODULE                             -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <link rel="stylesheet" href="search/css/list_result.css">
     <section class="swish-list-area">
@@ -209,7 +171,7 @@
 
 
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <!-- CARD MODULE -->
+    <!-- CARD MODULE                             -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <link rel="stylesheet" href="search/css/card_result.css">
     <section class="swish-card-area">
@@ -347,15 +309,14 @@
     </section>
 
 
-      <!-- ||||||||||||||||||||||||||||||||||||||| -->
-      <script>
-        $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();
-        });
-      </script>
-      <script src="search/js/navigation_bar.js"></script>
-      <script src="search/js/view_selection.js"></script>
-
-      <!-- ||||||||||||||||||||||||||||||||||||||| -->
+    <!-- ||||||||||||||||||||||||||||||||||||||| -->
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <script src="search/js/navigation_bar.js"></script>
+    <script src="search/js/view_selection.js"></script>
+    <!-- ||||||||||||||||||||||||||||||||||||||| -->
 
   </div>
