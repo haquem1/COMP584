@@ -27,7 +27,7 @@
             <!-- WEBSITE NAVIGATION BAR -->
             <div class="search-fields-container">
               <div class="row">
-                <form ng-controller="controller_name" ng-submit="submit_function()">
+                <form ng-submit="vm.searchFood()">
                   <!-- FOOD SEARCH FIELD -->
                   <div class="col-sm-4 col-lg-4">
                     <label id="food-input-field">
@@ -39,7 +39,7 @@
 
 
                           <!-- ACTUAL INPUT HERE!!!! -->
-                          <input ng-model="" type="text" class="form-control" id="exampleInputAmount" placeholder="Search Food">
+                          <input ng-model="vm.food_name" name="food_name" type="text" class="form-control" id="exampleInputAmount" placeholder="Search Food">
                         </div>
                       </div>
                     </label>
@@ -56,7 +56,7 @@
 
 
                           <!-- ACTUAL INPUT HERE!!!! -->
-                          <input ng-model="" type="text" class="form-control" id="exampleInputAmount" placeholder="Search Location">
+                          <input ng-model="vm.food_location" name="food_location" type="text" class="form-control" id="exampleInputAmount" placeholder="Search Location">
                         </div>
                       </div>
                     </label>
@@ -81,16 +81,16 @@
                         <p class="hidden-menu-title">price selection</p>
                         <div class="form-group">
                           <label class="checkbox-inline">
-                            <input ng-model="" [name=""] type="checkbox" id="inlineCheckbox1" value="1"> $
+                            <input ng-model="vm.price1" [name="price1"] type="checkbox" id="inlineCheckbox1" value="1"> $
                           </label>
                           <label class="checkbox-inline">
-                            <input ng-model="" [name=""] type="checkbox" id="inlineCheckbox2" value="2"> $$
+                            <input ng-model="vm.price2" [name="price2"] type="checkbox" id="inlineCheckbox2" value="2"> $$
                           </label>
                           <label class="checkbox-inline">
-                            <input ng-model="" [name=""] type="checkbox" id="inlineCheckbox3" value="3"> $$$
+                            <input ng-model="vm.price3" [name="price3"] type="checkbox" id="inlineCheckbox3" value="3"> $$$
                           </label>
                           <label class="checkbox-inline">
-                            <input ng-model="" [name=""] type="checkbox" id="inlineCheckbox4" value="4"> $$$$
+                            <input ng-model="vm.price4" [name="price4"] type="checkbox" id="inlineCheckbox4" value="4"> $$$$
                           </label>
                         </div>
                       </div>
@@ -100,8 +100,11 @@
                       <div class="row text-center">
                         <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
                           <p class="hidden-menu-title">category selection</p>
-                          <select class="form-control" ng-model="" ng-options="">
-                            <option value="?">Select Category</option>
+                          <select class="form-control" name="selected_category" ng-model="vm.selected_category">
+                            <option value="" disabled selected>Select Category</option>
+                            <option ng-repeat="option in vm.categories" value="{{option.name}}">
+                              {{option.name}}
+                            </option>
                           </select>
                         </div>
                       </div>
@@ -121,6 +124,14 @@
                     </div>
                   </aside>
                 </form>
+
+
+
+
+
+
+
+
               </div>
             </div>
           </div>  
@@ -131,10 +142,10 @@
           <section class="yellow-search-options">
             <div class="row">
               <div class="col-sm-6 col-lg-6 text-right">
-                <p class="user-food-search">discover foods</p>
+                <p class="user-food-search">{{vm.searched_food}}</p>
               </div>
               <div class="col-sm-6 col-lg-6 text-lefts">
-                <p class="user-location-search">in new places</p>
+                <p class="user-location-search">{{vm.searched_location}}</p>
               </div>
             </div>
             <img class="results-icon" src="assets/img/search_results_bar/result.svg" alt="results icon">

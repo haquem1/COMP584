@@ -1,20 +1,20 @@
 $(document).ready(function(){
 
   // SHOW HOMEPAGE
-  $('.swish-nav-logo').click(function(){
+  $('.swish-nav-brand').click(function(){
     hide_views();
     $('#homepage-elements').fadeIn();
   });
 
   // SHOW USER SEARCH
-  $('.search-result-list').click(function(){
+  $('.list-search-results').click(function(){
     hide_views();
     $('.swish-list-area').fadeIn();
 
   });
 
   // SHOW USER FAVORITES
-  $('.user-fav-cards').click(function(){
+  $('.card-favorite-results').click(function(){
     hide_views();
     $('.swish-card-area').fadeIn();
 

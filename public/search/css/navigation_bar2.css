@@ -345,10 +345,10 @@
 }
 
 .card-favorite-results{
- height:50%;
- position:absolute;
- top:25%;
- right:2%; 
+  height:50%;
+  position:absolute;
+  top:25%;
+  right:2%; 
 }
 
 .list-search-results:hover{
@@ -381,6 +381,14 @@
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .user-food-search,.user-location-search{
     margin-top:5%;
+  }
+
+  .list-search-results{
+    right:8%;
+  }
+
+  .card-favorite-results{
+    right:2%; 
   }
 } 
 
