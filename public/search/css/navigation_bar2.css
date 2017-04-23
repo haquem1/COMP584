@@ -1,7 +1,11 @@
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* RULES FOR NAVIGATION BAR                          */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 .swish-nav-bar-container{
   background-color:#4A5B63;
   height:10vh;
   position:relative;
+  z-index:1;
 }
 
 .swish-nav-brand{
@@ -187,5 +191,109 @@
     /*border:2px solid green;*/
     width:70%;
   }
+
+} 
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* HIDDEN NAVIGATION MENU RULES */
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.hidden-menu-container{
+  /*border:2px solid green;*/
+  position:absolute;
+  top:0;
+  right:-50%;
+  transform:translate(0%, 6.3vh);
+  border-radius:0 0 0 20px;
+
+  background-color:rgba(74,91,99,.9);
+  height:auto;
+  min-height:30vh;
+  width:50%;
+}
+
+.hidden-menu-inner-container{
+  position:relative;
+  width:100%;
+  height:30vh;
+  /*border:2px solid green;*/
+}
+
+.hidden-menu-title{
+  margin-top:5%;
+  font-weight:bold;
+  font-family:raleway;
+  font-size:1.5em;
+  color:white;
+  text-transform:capitalize;
+}
+
+.hidden-logout-container{
+  margin-top:5%;
+}
+
+.hidden-logout-container > a{
+  font-family:raleway;
+  font-size:1.3em;
+  color:white;
+  text-transform:capitalize;
+}
+
+.hidden-logout-container > a:hover{
+  color:white;
+  text-decoration:none;
+}
+
+.hidden-swish-logout{
+  height:45px;
+}
+
+.checkbox-inline{
+  font-family:raleway;
+  font-size:1.2em;
+  color:white;
+
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* CSS RULES FOR MEDIUM SIZED SCREENS: ;                       */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+} 
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* CSS RULES FOR SMALL SIZED SCREEN: ;                         */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media only screen and (max-width: 40em) {
+} 
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* CSS RULES FOR MAC BOOK PRO SIZE                         */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px){
+} 
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* CSS RULES FOR SHITTY RESOLUTION ... I MEAN SMALL RESOLUTIONS                         */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media only screen and (min-width: 1280px) and (max-width: 1600px){
 
 } 

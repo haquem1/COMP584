@@ -66,8 +66,56 @@
                     </a>
                     <img class="swish-menu" src="assets/img/navigation_bar/menu.svg" alt="logout button" data-toggle="tooltip" data-placement="bottom" title="Menu">
                   </div>
+                  
+
+                  <!-- HIDDEN MENU CONTAINER -->
+                  <aside class="hidden-menu-container"> <!-- ABSOLUTE CONTAINER -->
+                    <div class="hidden-menu-inner-container"> <!-- RELATIVE CONTAINER -->
+
+                      <!-- PRICE SELECTION -->
+                      <div class="row text-center">
+                        <p class="hidden-menu-title">price selection</p>
+                        <div class="form-group">
+                          <label class="checkbox-inline">
+                            <input ng-model="" [name=""] type="checkbox" id="inlineCheckbox1" value="1"> $
+                          </label>
+                          <label class="checkbox-inline">
+                            <input ng-model="" [name=""] type="checkbox" id="inlineCheckbox2" value="2"> $$
+                          </label>
+                          <label class="checkbox-inline">
+                            <input ng-model="" [name=""] type="checkbox" id="inlineCheckbox3" value="3"> $$$
+                          </label>
+                          <label class="checkbox-inline">
+                            <input ng-model="" [name=""] type="checkbox" id="inlineCheckbox4" value="4"> $$$$
+                          </label>
+                        </div>
+                      </div>
+
+                      
+                      <!-- CATEGORY SELECTION -->
+                      <div class="row text-center">
+                        <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
+                          <p class="hidden-menu-title">category selection</p>
+                          <select class="form-control" ng-model="" ng-options="">
+                            <option value="?">Select Category</option>
+                          </select>
+                        </div>
+                      </div>
 
 
+                      <!-- LOGOUT BUTTON -->
+                      <div class="row text-center">
+                        <div class="hidden-logout-container">
+                          <a href="/login">
+                            <img class="hidden-swish-logout" src="assets/img/navigation_bar/logout.svg" alt="logout button">
+                            logout
+                          </a>  
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </aside>
                 </form>
               </div>
 
@@ -76,7 +124,7 @@
           </div>      
 
 
-          
+
         </div>
       </div>
     </div>
