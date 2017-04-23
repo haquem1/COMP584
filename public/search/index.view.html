@@ -70,7 +70,7 @@
                     </a>
                     <img class="swish-menu" src="assets/img/navigation_bar/menu.svg" alt="logout button" data-toggle="tooltip" data-placement="bottom" title="Menu">
                   </div>
-                  
+
 
                   <!-- HIDDEN MENU CONTAINER -->
                   <aside class="hidden-menu-container"> <!-- ABSOLUTE CONTAINER -->
@@ -95,7 +95,7 @@
                         </div>
                       </div>
 
-                      
+
                       <!-- CATEGORY SELECTION -->
                       <div class="row text-center">
                         <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
@@ -116,7 +116,7 @@
                           <a href="/login">
                             <img class="hidden-swish-logout" src="assets/img/navigation_bar/logout.svg" alt="logout button">
                             logout
-                          </a>  
+                          </a>
                         </div>
                       </div>
 
@@ -134,7 +134,7 @@
 
               </div>
             </div>
-          </div>  
+          </div>
 
 
           <!-- WEBSITE SEARCH FIELDS DISPLAYED -->
@@ -153,7 +153,7 @@
 
             <img class="list-search-results" src="assets/img/search_results_bar/bullets.svg" alt="search results icon" data-toggle="tooltip" data-placement="bottom" title="Search Results">
             <img class="card-favorite-results" src="assets/img/search_results_bar/cards.svg" alt="favorite section icon" data-toggle="tooltip" data-placement="bottom" title="Your Favorites">
-          </section>    
+          </section>
 
 
 
@@ -227,7 +227,7 @@
                       <p class="item-name">{{item.name}}</p>
                       <p class="item-address">{{item.location.address1}}</p>
                       <p class="item-phone">{{item.display_phone}}</p>
-                      <p class="item-rating">{{item.rating}}</p>
+                      <p class="item-rating">Rating: {{item.rating}}</p>
                     </div>
                     <div class="add-btn-container">
                       <img class="fav-btn" data-toggle="tooltip" data-placement="left" title="Add to favorite" src="assets/img/search_list_item/add.svg" alt="">
@@ -235,11 +235,11 @@
                   </section>
                 </div>
 
-                <div class="col-sm-3 col-lg-4">
-                  <img class="item-image" ng-src="{{item.image_url}}" alt="food sample 2">
+                <div class="col-sm-3 col-lg-4" ng-repeat="business in vm.businesses_results">
+                  <img class="item-image" ng-src="{{business.photos[1]}}" alt="food sample 2">
                 </div>
-                <div class="col-sm-3 col-lg-4">
-                  <img class="item-image" ng-src="{{item.image_url}}" alt="food sample 3">
+                <div class="col-sm-3 col-lg-4" ng-repeat="business in vm.businesses_results">
+                  <img class="item-image" ng-src="{{business.photos[2]}}" alt="food sample 3">
                 </div>
               </div>
             </div>

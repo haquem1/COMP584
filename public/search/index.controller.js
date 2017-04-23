@@ -11,7 +11,7 @@
         // register the function with the controller
         vm.searchFood = searchFood;
         vm.getBusiness = getBusiness;
-        
+
 
         initController();
 
@@ -29,8 +29,8 @@
 
 
             vm.search_results;
-            vm.businesses_results;
-            vm.favorites_results;
+            vm.businesses_results = [];
+            vm.favorites_results = [];
         };
 
         /* Linked to the Check out that chicken, boi right now */
@@ -50,9 +50,11 @@
             vm.searched_location = vm.food_location;
 
             // let's bother a server some place on earth
-            SearchService.Search(vm.searched_food, '90210', 'cafes', '1,2,3', function(result){
+            SearchService.Search(vm.searched_food, vm.searched_location, 'cafes', '1,2,3', function(result){
                 vm.search_results = result;
-                console.log(vm.search_results);
+                for (var i = 0; i < vm.search_results.businesses.length; i++) {
+                  getBusiness(vm.search_results.businesses[i].id);
+                }
             });
 
             hide_views();
@@ -63,11 +65,11 @@
         // get the images for the current business
         function getBusiness(place_id){
             SearchService.Business(place_id, function(result){
-                vm.businesses_results = result;
-                console.log(result);
+                vm.businesses_results.push(result);
             });
-            return vm.businesses_results;
         };
+
+        
 
 
     }
