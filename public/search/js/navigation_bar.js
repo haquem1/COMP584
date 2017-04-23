@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.dropdown-toggle').dropdown();
+  $('[data-toggle="tooltip"]').tooltip();
 
   var active_side_bar = false;
 

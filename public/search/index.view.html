@@ -6,6 +6,11 @@
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <link rel="stylesheet" href="search/css/main.css">
     <link rel="stylesheet" href="search/css/navigation_bar2.css">
+
+
+
+
+
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <!-- COMPLETE NAVIGATION BAR -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
@@ -16,14 +21,13 @@
 
 
           <div class="swish-nav-bar-container">
+            <!-- WEBSITE NAME -->
             <p class="swish-nav-brand">swish</p>
 
-
+            <!-- WEBSITE NAVIGATION BAR -->
             <div class="search-fields-container">
               <div class="row">
                 <form ng-controller="controller_name" ng-submit="submit_function()">
-
-
                   <!-- FOOD SEARCH FIELD -->
                   <div class="col-sm-4 col-lg-4">
                     <label id="food-input-field">
@@ -118,10 +122,27 @@
                   </aside>
                 </form>
               </div>
-
             </div>
+          </div>  
 
-          </div>      
+
+          <!-- WEBSITE SEARCH FIELDS DISPLAYED -->
+          <!-- YELLOW BAR | SELECTION BETWEEN LIST VIEW AND FAVORITIES -->
+          <section class="yellow-search-options">
+            <div class="row">
+              <div class="col-sm-6 col-lg-6 text-right">
+                <p class="user-food-search">discover foods</p>
+              </div>
+              <div class="col-sm-6 col-lg-6 text-lefts">
+                <p class="user-location-search">in new places</p>
+              </div>
+            </div>
+            <img class="results-icon" src="assets/img/search_results_bar/result.svg" alt="results icon">
+            <img class="pointy" src="assets/img/search_results_bar/pointy.svg" alt="pointy thingy for the bar">
+
+            <img class="list-search-results" src="assets/img/search_results_bar/bullets.svg" alt="search results icon" data-toggle="tooltip" data-placement="bottom" title="Search Results">
+            <img class="card-favorite-results" src="assets/img/search_results_bar/cards.svg" alt="favorite section icon" data-toggle="tooltip" data-placement="bottom" title="Your Favorites">
+          </section>    
 
 
 
@@ -358,11 +379,6 @@
 
 
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
     <script src="search/js/navigation_bar.js"></script>
     <script src="search/js/view_selection.js"></script>
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
