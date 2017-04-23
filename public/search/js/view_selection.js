@@ -10,7 +10,6 @@ $(document).ready(function(){
   $('.list-search-results').click(function(){
     hide_views();
     $('.swish-list-area').fadeIn();
-
   });
 
   // SHOW USER FAVORITES
