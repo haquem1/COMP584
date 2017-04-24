@@ -1,8 +1,5 @@
 $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-
   var active_side_bar = false;
-
 
   $('.swish-menu').click(function(){
     if(!active_side_bar){

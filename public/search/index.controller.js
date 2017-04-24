@@ -52,6 +52,7 @@
             // let's bother a server some place on earth
             SearchService.Search(vm.searched_food, vm.searched_location, 'cafes', '1,2,3', function(result){
                 vm.search_results = result;
+                console.log(result);
                 for (var i = 0; i < vm.search_results.businesses.length; i++) {
                   getBusiness(vm.search_results.businesses[i].id);
                 }

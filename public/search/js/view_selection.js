@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  // testing only
+  // hide_views();
+  // $('.swish-list-area').fadeIn();
 
   // SHOW HOMEPAGE
   $('.swish-nav-brand').click(function(){
