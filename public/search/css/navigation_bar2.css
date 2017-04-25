@@ -289,6 +289,9 @@
 /* CSS RULES FOR MAC BOOK PRO SIZE                         */
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px){
+  .hidden-menu-container{
+    min-height:33vh;
+  }
 } 
 
 

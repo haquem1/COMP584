@@ -26,8 +26,6 @@
             { name:'testing4' }
             ];
 
-
-
             vm.search_results;
             vm.businesses_results = [];
             vm.favorites_results = [];
@@ -55,8 +53,8 @@
                 console.log(result);
                 for (var i = 0; i < vm.search_results.businesses.length; i++) {
                   getBusiness(vm.search_results.businesses[i].id);
-                }
-            });
+              }
+          });
 
             hide_views();
             $('.swish-list-area').fadeIn();
