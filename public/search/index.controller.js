@@ -46,9 +46,24 @@
             //update the user search field (Yellow bar)
             vm.searched_food = vm.food_name;
             vm.searched_location = vm.food_location;
+            vm.price = '1,2,3,4';
+
+            if (vm.price1) vm.price = '1';
+            if (vm.price2) {
+              if (vm.price1) vm.price = vm.price + ',2';
+              else vm.price = '2';
+            }
+            if (vm.price3) {
+              if (vm.price1 || vm.price2) vm.price = vm.price + ',3';
+              else vm.price = '3'
+            }
+            if (vm.price4) {
+              if (vm.price1 || vm.price2 || vm.price3) vm.price = vm.price + ',4';
+              else vm.price = '4';
+            }
 
             // let's bother a server some place on earth
-            SearchService.Search(vm.searched_food, vm.searched_location, 'cafes', '1,2,3', function(result){
+            SearchService.Search(vm.searched_food, vm.searched_location, 'restaurants', vm.price, function(result){
                 vm.search_results = result;
                 console.log(result);
                 for (var i = 0; i < vm.search_results.businesses.length; i++) {
@@ -68,7 +83,7 @@
             });
         };
 
-        
+
 
 
     }
