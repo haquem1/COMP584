@@ -20,10 +20,15 @@
             vm.searched_location = "in new places";
 
             vm.categories = [
-            { name:'testing1' },
-            { name:'testing2' },
-            { name:'testing3' },
-            { name:'testing4' }
+              { name:'bakeries' },
+              { name:'bistros' },
+              { name:'cafes' },
+              { name:'diners' },
+              { name:'gastropubs' },
+              { name:'gourmet' },
+              { name:'tapas' },
+              { name:'vegan' },
+              { name:'vegetarian' }
             ];
 
             vm.search_results;
@@ -47,6 +52,7 @@
             vm.searched_food = vm.food_name;
             vm.searched_location = vm.food_location;
             vm.price = '1,2,3,4';
+            vm.category_filter = 'restaurants';
 
             if (vm.price1) vm.price = '1';
             if (vm.price2) {
@@ -62,8 +68,9 @@
               else vm.price = '4';
             }
 
+            if (vm.selected_category) vm.category_filter = vm.selected_category;
             // let's bother a server some place on earth
-            SearchService.Search(vm.searched_food, vm.searched_location, 'restaurants', vm.price, function(result){
+            SearchService.Search(vm.searched_food, vm.searched_location, vm.category_filter, vm.price, function(result){
                 vm.search_results = result;
                 console.log(result);
                 for (var i = 0; i < vm.search_results.businesses.length; i++) {

@@ -96,8 +96,8 @@
                         <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
                           <p class="hidden-menu-title">category selection</p>
                           <select class="form-control" name="selected_category" ng-model="vm.selected_category">
-                            <option value="" disabled selected>Select Category</option>
-                            <option ng-repeat="option in vm.categories" value="{{option.name}}">
+                            <option value="" disabled selected>Select Restaurant Type</option>
+                            <option ng-repeat="option in vm.categories" value="{{option.name}}" ng-selected="vm.selected_category == option.name">
                               {{option.name}}
                             </option>
                           </select>
@@ -228,7 +228,7 @@
 
                       <!-- NEED HELP DATA BINDING THIS PUPPY to {{item.rating}} -->
                       <span class="stars" data-rating="4" data-num-stars="5" ></span>
-                      
+
 
 
                     </div>
