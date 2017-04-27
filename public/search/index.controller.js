@@ -31,7 +31,8 @@
               { name:'vegetarian' }
             ];
 
-            vm.search_results;
+            vm.search_results = [];
+            vm.search_results.businesses=[];
             vm.businesses_results = [];
             vm.favorites_results = [];
         };
@@ -61,7 +62,7 @@
             }
             if (vm.price3) {
               if (vm.price1 || vm.price2) vm.price = vm.price + ',3';
-              else vm.price = '3'
+              else vm.price = '3';
             }
             if (vm.price4) {
               if (vm.price1 || vm.price2 || vm.price3) vm.price = vm.price + ',4';
@@ -70,28 +71,24 @@
 
             if (vm.selected_category) vm.category_filter = vm.selected_category;
             // let's bother a server some place on earth
-            SearchService.Search(vm.searched_food, vm.searched_location, vm.category_filter, vm.price, function(result){
-                vm.search_results = result;
-                console.log(result);
-                for (var i = 0; i < vm.search_results.businesses.length; i++) {
-                  getBusiness(vm.search_results.businesses[i].id);
-              }
-          });
+            SearchService.Search(vm.searched_food, vm.searched_location, vm.category_filter, vm.price, function(result) {
 
+            vm.search_results.businesses = result.businesses;
+            for (var i = 0; i < vm.search_results.businesses.length; i++) {
+                getBusiness(vm.search_results.businesses[i].id);
+            }
+
+          });
             hide_views();
             $('.swish-list-area').fadeIn();
         };
 
-
         // get the images for the current business
         function getBusiness(place_id){
-            SearchService.Business(place_id, function(result){
-                vm.businesses_results.push(result);
-            });
+           SearchService.Business(place_id, function(result){
+               vm.businesses_results.push(result);
+           });
         };
-
-
-
 
     }
 })();

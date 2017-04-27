@@ -1,8 +1,8 @@
  // http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css
  $.fn.stars = function() {
     return $(this).each(function() {
-
         var rating = $(this).data("rating");
+        console.log(rating);
 
         var numStars = $(this).data("numStars");
 

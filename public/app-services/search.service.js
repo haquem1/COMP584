@@ -14,8 +14,6 @@
     return service;
 
     function Search(term, location, categories, price, callback) {
-      if (categories == '') categories = 'restaurants';
-      if (price == '') price = '1,2,3,4';
       $http.get('/search/' + location + '/' + term + '?categories=' + categories + '&price=' + price)
       .success(function (response) {
         if (response.msg) callback(response.msg);

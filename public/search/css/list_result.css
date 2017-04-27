@@ -93,7 +93,7 @@
 }
 
 .item-information > img{
- height:300px; 
+ height:300px;
  /*width:100%;*/
  opacity:.5;
 }
@@ -104,6 +104,8 @@
 }
 
 .swish-list-item > div.col-lg-4{
+  background-image: url('https://cdn.shutterstock.com/shutterstock/videos/8919856/thumb/1.jpg');
+  background-size: cover;
   padding:0;
 }
 

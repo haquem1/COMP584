@@ -205,24 +205,15 @@
         <div class="row" ng-repeat="item in vm.search_results.businesses">
           <div class="col-lg-12">
             <div class="row">
-              <div class="swish-list-item">
+              <div class="swish-list-item" style="background-image: url('https://res.cloudinary.com/format-magazine-production/image/upload/c_limit,w_1800,h_1200,f_jpg,f_auto/dpr_1.0/c_scale,w_870,h_580/Mexican_Table_1_slzrja'); background-size: cover;">
                 <div class="col-sm-6 col-lg-4">
                   <section class="item-information">
-                    <img ng-src="{{item.image_url}}" alt="food sample 1">
+                      <img class="item-image" ng-src="{{item.image_url}}" alt="food sample 1">
 
                     <div class="item-upper-info-container">
                       <p class="item-name">{{item.name}}</p>
                       <p class="item-address2">{{item.location.city}}, {{item.location.state}}</p>
-
-
-
-
-
-
-
-                      <!-- NEED HELP DATA BINDING THIS PUPPY to {{item.rating}} -->
-                      <span class="stars" data-rating="4" data-num-stars="5" ></span>
-
+                      <p class="item-address2"><br>Rating: {{item.rating}}/5 ({{item.review_count}} reviews)</p>
 
 
                     </div>
@@ -233,17 +224,11 @@
                       <p class="item-phone">{{item.display_phone}}</p>
                     </div>
                     <div class="add-btn-container">
-                      <img class="fav-btn" data-toggle="tooltip" data-placement="left" title="Add to favorite" src="assets/img/search_list_item/add.svg" alt="">
+                      <a href=""><img class="fav-btn" data-toggle="tooltip" data-placement="left" title="Add to favorite" src="assets/img/search_list_item/add.svg" alt=""></a>
                     </div>
                   </section>
                 </div>
 
-                <div class="col-sm-3 col-lg-4" ng-repeat="business in vm.businesses_results">
-                  <img class="item-image" ng-src="{{business.photos[1]}}" alt="food sample 2">
-                </div>
-                <div class="col-sm-3 col-lg-4" ng-repeat="business in vm.businesses_results">
-                  <img class="item-image" ng-src="{{business.photos[2]}}" alt="food sample 3">
-                </div>
               </div>
             </div>
 
@@ -281,7 +266,7 @@
                 <!-- REMOVE CARD BTN -->
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="rem-btn-container">
-                  <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="assets/img/search_card_item/remove.svg" alt="">
+                  <a href><img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="assets/img/search_card_item/remove.svg" alt=""></a>
                 </div>
 
                 <!-- |||||||||||||||||||||||||||| -->
@@ -298,6 +283,9 @@
                     </a>
                   </div>
                 </div>
+                <img class="item-image" ng-src="{{item.photos[1]}}" alt="food sample 2">
+                <img class="item-image" ng-src="{{item.photos[2]}}" alt="food sample 3">
+
 
 
               </section>
@@ -398,7 +386,8 @@
     <script>$('[data-toggle="tooltip"]').tooltip();</script>
     <script src="search/js/navigation_bar.js"></script>
     <script src="search/js/view_selection.js"></script>
-    <script src="assets/js/rating_stars.js"></script>
+    <!-- <script src="assets/js/rating_stars.js"></script> -->
+
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
 
   </div>
