@@ -273,8 +273,8 @@
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="card-btn-container">
                   <div class="row text-center">
-                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator">
-                    <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
+                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator" ng-show="{{business.hours[0].is_open_now}}">
+                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator" ng-show="{{!business.hours[0].is_open_now}}">
                     <a href="{{business.url}}">
                       <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="assets/img/search_card_item/yelp.svg" alt="">
                     </a>
