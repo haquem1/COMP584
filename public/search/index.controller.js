@@ -10,8 +10,8 @@
         vm.test = test;
         // register the function with the controller
         vm.searchFood = searchFood;
-        vm.getBusiness = getBusiness;
-
+        vm.addFavorites = addFavorites;
+        vm.removeFavorite = removeFavorite;
 
         initController();
 
@@ -74,21 +74,23 @@
             SearchService.Search(vm.searched_food, vm.searched_location, vm.category_filter, vm.price, function(result) {
 
             vm.search_results.businesses = result.businesses;
-            for (var i = 0; i < vm.search_results.businesses.length; i++) {
-                getBusiness(vm.search_results.businesses[i].id);
-            }
 
           });
             hide_views();
             $('.swish-list-area').fadeIn();
         };
 
-        // get the images for the current business
-        function getBusiness(place_id){
-           SearchService.Business(place_id, function(result){
-               vm.businesses_results.push(result);
-           });
-        };
+        // add favorites to columns
+        function addFavorites(item){
+          SearchService.Business(item.id, function(result){
+            vm.favorites_results.push(result);
+          });
+        }
+
+        // remove favorites from columns
+        function removeFavorite(item){
+          vm.favorites_results.splice(vm.favorites_results.indexOf(item), 1);
+        }
 
     }
 })();

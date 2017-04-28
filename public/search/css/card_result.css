@@ -59,7 +59,7 @@
   position:absolute;
   top:5%;
   right:5%;
-  height:12%;
+  height:28px;;
   transform:scale(1);
   transition:transform .3s ease-in;
 }

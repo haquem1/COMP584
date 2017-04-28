@@ -214,8 +214,6 @@
                       <p class="item-name">{{item.name}}</p>
                       <p class="item-address2">{{item.location.city}}, {{item.location.state}}</p>
                       <p class="item-address2"><br>Rating: {{item.rating}}/5 ({{item.review_count}} reviews)</p>
-
-
                     </div>
 
                     <div class="item-info-container">
@@ -224,7 +222,7 @@
                       <p class="item-phone">{{item.display_phone}}</p>
                     </div>
                     <div class="add-btn-container">
-                      <a href=""><img class="fav-btn" data-toggle="tooltip" data-placement="left" title="Add to favorite" src="assets/img/search_list_item/add.svg" alt=""></a>
+                      <a href=""><img class="fav-btn" data-toggle="tooltip" data-placement="left" title="Add to favorite" src="assets/img/search_list_item/add.svg" alt="" ng-click="vm.addFavorites(item)"></a>
                     </div>
                   </section>
                 </div>
@@ -247,25 +245,26 @@
     <section class="swish-card-area">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="col-xs-12 col-sm-6 col-lg-4" ng-repeat="business in vm.favorites_results">
             <div class="swish-card-item">
 
               <section class="card-item-information">
-                <img src="assets/img/search_list_item/sample1.jpg" alt="food sample 1">
+                <img ng-src="{{business.photos[$index % 3]}}" alt="food sample 1">
                 <!-- |||||||||||||||||||||||||||| -->
                 <!-- INFORMATION CONTAINER-->
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="card-item-info-container">
-                  <p class="card-item-name">pollop coll</p>
-                  <p class="card-item-address">6421 selma ave los angeles, CA 90028</p>
-                  <p class="card-item-phone">(323) 934-3724</p>
-                  <p class="card-item-rating">4 stars</p>
+                  <p class="card-item-name"> {{business.name}}</p>
+                  <p class="card-item-address">{{business.location.address1}}</p>
+                  <p class="card-item-address">{{business.location.city}}, {{business.location.state}} {{business.location.zip_code}}</p>
+                  <p class="card-item-phone">{{business.display_phone}}</p>
+                  <p class="card-item-rating"><br>Rating: {{business.rating}}/5 ({{business.review_count}} reviews)</p>
                 </div>
 
                 <!-- |||||||||||||||||||||||||||| -->
                 <!-- REMOVE CARD BTN -->
                 <!-- |||||||||||||||||||||||||||| -->
-                <div class="rem-btn-container">
+                <div class="rem-btn-container" ng-click="vm.removeFavorite(business)">
                   <a href><img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="assets/img/search_card_item/remove.svg" alt=""></a>
                 </div>
 
@@ -274,109 +273,18 @@
                 <!-- |||||||||||||||||||||||||||| -->
                 <div class="card-btn-container">
                   <div class="row text-center">
-                    <img class="card-btn" src="assets/img/search_card_item/clock.svg" alt="restaurant hours">
-
                     <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator">
                     <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
-                    <a href="#!URL">
-                      <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="assets/img/search_card_item/yelp.svg" alt="">
-                    </a>
-                  </div>
-                </div>
-                <img class="item-image" ng-src="{{item.photos[1]}}" alt="food sample 2">
-                <img class="item-image" ng-src="{{item.photos[2]}}" alt="food sample 3">
-
-
-
-              </section>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="swish-card-item">
-
-              <section class="card-item-information">
-                <img src="assets/img/search_list_item/sample1.jpg" alt="food sample 1">
-
-                <!-- |||||||||||||||||||||||||||| -->
-                <!-- -->
-                <!-- |||||||||||||||||||||||||||| -->
-                <div class="card-item-info-container">
-                  <p class="card-item-name">pollop coll</p>
-                  <p class="card-item-address">6421 selma ave los angeles, CA 90028</p>
-                  <p class="card-item-phone">(323) 934-3724</p>
-                  <p class="card-item-rating">4 stars</p>
-                </div>
-
-                <!-- |||||||||||||||||||||||||||| -->
-                <!-- REMOVE CARD BTN -->
-                <!-- |||||||||||||||||||||||||||| -->
-                <div class="rem-btn-container">
-                  <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="assets/img/search_card_item/remove.svg" alt="">
-                </div>
-
-                <!-- |||||||||||||||||||||||||||| -->
-                <!-- CARD BTN CONTAINER -->
-                <!-- |||||||||||||||||||||||||||| -->
-                <div class="card-btn-container">
-                  <div class="row text-center">
-                    <img class="card-btn" src="assets/img/search_card_item/clock.svg" alt="restaurant hours">
-
-                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="assets/img/search_card_item/open.svg" alt="open restaurant indicator">
-                    <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
-                    <a href="#!URL">
+                    <a href="{{business.url}}">
                       <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="assets/img/search_card_item/yelp.svg" alt="">
                     </a>
                   </div>
                 </div>
 
-
               </section>
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="swish-card-item">
-
-              <section class="card-item-information">
-                <img src="assets/img/search_list_item/sample1.jpg" alt="food sample 1">
-
-                <!-- |||||||||||||||||||||||||||| -->
-                <!-- -->
-                <!-- |||||||||||||||||||||||||||| -->
-                <div class="card-item-info-container">
-                  <p class="card-item-name">pollop coll</p>
-                  <p class="card-item-address">6421 selma ave los angeles, CA 90028</p>
-                  <p class="card-item-phone">(323) 934-3724</p>
-                  <p class="card-item-rating">4 stars</p>
-                </div>
-
-                <!-- |||||||||||||||||||||||||||| -->
-                <!-- REMOVE CARD BTN -->
-                <!-- |||||||||||||||||||||||||||| -->
-                <div class="rem-btn-container">
-                  <img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="assets/img/search_card_item/remove.svg" alt="">
-                </div>
-
-                <!-- |||||||||||||||||||||||||||| -->
-                <!-- CARD BTN CONTAINER -->
-                <!-- |||||||||||||||||||||||||||| -->
-                <div class="card-btn-container">
-                  <div class="row text-center">
-                    <img class="card-btn" src="assets/img/search_card_item/clock.svg" alt="restaurant hours">
-
-                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="assets/img/search_card_item/open.svg" alt="open restaurant indicator">
-                    <!-- <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator"> -->
-                    <a href="#!URL">
-                      <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="assets/img/search_card_item/yelp.svg" alt="">
-                    </a>
-                  </div>
-                </div>
-
-
-              </section>
-            </div>
-          </div>
         </div>
       </div>
     </section>
