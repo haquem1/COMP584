@@ -1,0 +1,181 @@
+.search-result-wrapper{
+  margin-top:100px;
+}
+
+.search-result-item{
+  height:300px;
+  width:100%;
+  position:relative;
+  background-color:rgba(74,91,99,1);
+  margin-bottom:10%;
+}
+
+/*BOX BORDER RULES*/
+.border-box{
+  height:20%;
+  width:10%;
+  position:absolute;
+  z-index:1;
+  transition: all .3s linear;
+}
+
+.upper-left{
+  border-left:8px solid #F6BF33;
+  border-top:8px solid #F6BF33;
+  top:-2%;
+  left:-1%;
+}
+
+.upper-right{
+  border-right:8px solid #F6BF33;
+  border-top:8px solid #F6BF33;
+  top:-2%;
+  right:-1%;
+}
+
+.lower-left{
+  border-left:8px solid #F6BF33;
+  border-bottom:8px solid #F6BF33;
+  bottom:-2%;
+  left:-1%;
+}
+
+.lower-right{
+  border-right:8px solid #F6BF33;
+  border-bottom:8px solid #F6BF33;
+  bottom:-2%;
+  right:-1%;
+}
+
+/*BOX BORDER HOVER RULES*/
+.search-result-item:hover > .upper-left{
+  width:52%;
+  height:1%;
+}
+
+.search-result-item:hover > .upper-right{
+  width:52%;
+  height:1%;
+}
+
+.search-result-item:hover > .lower-left{
+  width:52%;
+  height:1%;
+}
+
+.search-result-item:hover > .lower-right{
+  width:52%;
+  height:1%;
+}
+
+.search-result-item:hover > .result-bkg-container > .result-item-bkg{
+  opacity:.1;
+}
+
+/*RESULT IMG RULE*/
+.result-bkg-container{
+  height:100%;
+  width:100%;
+  overflow:hidden;
+}
+
+.result-item-bkg{
+  width:100%;
+  opacity:.5;
+  transition:all .3s linear;
+}
+
+
+
+
+/*INFORMATION CONTAINER*/
+.result-info-container{
+  position:absolute;
+  top:0;
+  left:0;
+  height:inherit;
+  width:inherit;
+  z-index:2;
+  padding:10px;
+}
+
+.result-inner-container{
+  position:relative;
+  height:inherit;
+  width:inherit;
+}
+
+.result-info{
+  font-family:raleway;
+  color:white;
+  font-size:1.5em;
+  margin:0;
+  text-transform:capitalize;
+}
+
+.upper-information{
+  position:absolute;
+  top:0%;
+  left:0;
+}
+
+.lower-information{
+  position:absolute;
+  bottom:8%;
+  left:0;
+}
+
+.result-name{
+  font-size:1.8em;
+  font-weight:bold;
+}
+
+
+/*ADD FAVORITE BTN*/
+.favorite-btn{
+  position:absolute;
+  top:0;
+  right:0;
+  height:13%;
+  transition:all .2s linear;
+}
+
+.favorite-btn:hover{
+  height:14%;
+}
+
+
+
+/*SIDE INFORMATION RULES*/
+.side-information{
+  position:absolute;
+  height:30%;
+  width:auto;
+
+  top:-2%;
+  right:10%;
+}
+
+
+.data-container{
+  position:relative;
+  display:inline-block;
+  margin:10px;
+  height:100%;
+}
+
+.data-icon{
+  height:35%;
+  transition:all .2s linear;
+}
+
+.data-icon:hover{
+  height:40%;
+}
+
+.data-field{
+  font-family:raleway;
+  font-size:1em;
+  color:white; 
+}
+

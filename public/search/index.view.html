@@ -198,38 +198,66 @@
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <!-- LIST MODULE                             -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <link rel="stylesheet" href="search/css/list_result.css">
+    <link rel="stylesheet" href="search/css/list_results2.css">
     <section class="swish-list-area">
       <div class="container">
+        <div class="search-result-wrapper">
+          <div class="row">
+            <div class="col-lg-6" ng-repeat="item in vm.search_results.businesses">
+              <div class="search-result-item">
+                <div class="border-box upper-left"></div>
+                <div class="border-box upper-right"></div>
+                <div class="border-box lower-left"></div>
+                <div class="border-box lower-right"></div>
 
-        <div class="row" ng-repeat="item in vm.search_results.businesses">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="swish-list-item" style="background-image: url('https://res.cloudinary.com/format-magazine-production/image/upload/c_limit,w_1800,h_1200,f_jpg,f_auto/dpr_1.0/c_scale,w_870,h_580/Mexican_Table_1_slzrja'); background-size: cover;">
-                <div class="col-sm-6 col-lg-4">
-                  <section class="item-information">
-                      <img class="item-image" ng-src="{{item.image_url}}" alt="food sample 1">
 
-                    <div class="item-upper-info-container">
-                      <p class="item-name">{{item.name}}</p>
-                      <p class="item-address2">{{item.location.city}}, {{item.location.state}}</p>
-                      <p class="item-address2"><br>Rating: {{item.rating}}/5 ({{item.review_count}} reviews)</p>
-                    </div>
-
-                    <div class="item-info-container">
-                      <p class="item-address">{{item.location.address1}}</p>
-                      <p class="item-address">{{item.location.city}}, {{item.location.state}} {{item.location.zip_code}}</p>
-                      <p class="item-phone">{{item.display_phone}}</p>
-                    </div>
-                    <div class="add-btn-container">
-                      <a href=""><img class="fav-btn" data-toggle="tooltip" data-placement="left" title="Add to favorite" src="assets/img/search_list_item/add.svg" alt="" ng-click="vm.addFavorites(item)"></a>
-                    </div>
-                  </section>
+                <div class="result-bkg-container">
+                  <img class="result-item-bkg" ng-src="{{item.image_url}}" alt="search result image">
                 </div>
 
+
+                <section class="result-info-container">
+                  <div class="result-inner-container">
+
+                    <a href="">
+                      <img class="favorite-btn tooltipped" src="assets/img/search_list_item/add.svg" alt="add to favorite icon" data-toggle="tooltip" data-placement="left" title="Add To Favorites" ng-click="vm.addFavorites(item)">
+                    </a>
+
+                    <div class="upper-information">
+                      <p class="result-info result-name">{{item.name}}</p>
+                      <p class="result-info result-city">{{item.location.city}}, {{item.location.state}}</p>  
+                    </div>
+
+                    <div class="lower-information">
+                      <p class="result-info result-address">{{item.location.address1}}</p>
+                      <p class="result-info result-address">
+                        {{item.location.city}}, {{item.location.state}} {{item.location.zip_code}}
+                      </p>
+                      <p class="result-info result-phone">{{item.display_phone}}</p>
+                    </div>
+
+
+                    <div class="side-information">
+                      <!-- ITEM REVIEWS CONTAINER -->
+                      <div class="data-container text-center">
+                        <a ng-attr-href="{{item.url}}" target="_blank">
+                          <img class="data-icon tooltipped" src="assets/img/search_list_item/reviews.svg" alt="item reviews icon" data-toggle="tooltip" data-placement="top" title="Reviews!">
+                        </a>
+                        <p class="data-field">{{item.review_count}}</p>
+                      </div>
+
+                      <!-- ITEM RATING CONTAINER -->
+                      <div class="data-container text-center">
+                        <img class="data-icon tooltipped" src="assets/img/search_list_item/rating.svg" alt="item rating icon" data-toggle="tooltip" data-placement="right" title="Check out them ratings, boi!">
+                        <p class="data-field">{{item.rating}}</p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </section>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -291,7 +319,6 @@
 
 
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <script>$('[data-toggle="tooltip"]').tooltip();</script>
     <script src="search/js/navigation_bar.js"></script>
     <script src="search/js/view_selection.js"></script>
     <!-- <script src="assets/js/rating_stars.js"></script> -->

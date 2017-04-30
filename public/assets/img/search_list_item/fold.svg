@@ -1,0 +1,18 @@
+<svg width="408" height="235" viewBox="0 0 408 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>show-less-fold-button</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-4725 -2128)" figma:type="canvas">
+<g id="show-less-fold-button" figma:type="frame">
+<g id="Group" figma:type="frame">
+<g id="unfold-less" figma:type="frame">
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 5133 2128)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M -3.05176e-06 372.3L 35.7 408L 117.3 326.4L 198.9 408L 234.6 372.3L 117.3 255L -3.05176e-06 372.3ZM 234.6 35.7L 198.9 0L 117.3 81.6L 35.7 0L -3.05176e-06 35.7L 117.3 153L 234.6 35.7Z"/>
+</defs>
+</svg>

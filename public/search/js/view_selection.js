@@ -24,6 +24,7 @@ $(document).ready(function(){
 
 });
 
+$(document.body).tooltip({ selector: ".tooltipped" });
 
 function hide_views(){
 

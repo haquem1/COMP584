@@ -1,13 +1,13 @@
 (function () {
-    'use strict';
+  'use strict';
 
-    angular
-    .module('app')
-    .controller('Search.IndexController', Controller);
+  angular
+  .module('app')
+  .controller('Search.IndexController', Controller);
 
-    function Controller(SearchService) {
-        var vm = this;
-        vm.test = test;
+  function Controller(SearchService) {
+    var vm = this;
+    vm.test = test;
         // register the function with the controller
         vm.searchFood = searchFood;
         vm.addFavorites = addFavorites;
@@ -16,34 +16,34 @@
         initController();
 
         function initController() {
-            vm.searched_food = "discover foods";
-            vm.searched_location = "in new places";
+          vm.searched_food = "discover foods";
+          vm.searched_location = "in new places";
 
-            vm.categories = [
-              { name:'bakeries' },
-              { name:'bistros' },
-              { name:'cafes' },
-              { name:'diners' },
-              { name:'gastropubs' },
-              { name:'gourmet' },
-              { name:'tapas' },
-              { name:'vegan' },
-              { name:'vegetarian' }
-            ];
+          vm.categories = [
+          { name:'bakeries' },
+          { name:'bistros' },
+          { name:'cafes' },
+          { name:'diners' },
+          { name:'gastropubs' },
+          { name:'gourmet' },
+          { name:'tapas' },
+          { name:'vegan' },
+          { name:'vegetarian' }
+          ];
 
-            vm.search_results = [];
-            vm.search_results.businesses=[];
-            vm.businesses_results = [];
-            vm.favorites_results = [];
+          vm.search_results = [];
+          vm.search_results.businesses=[];
+          vm.businesses_results = [];
+          vm.favorites_results = [];
         };
 
         /* Linked to the Check out that chicken, boi right now */
         function test() {
-            SearchService.Search('food', '90210', 'cafes', '1,2,3', function(result){
-              console.log(result);
+          SearchService.Search('food', '90210', 'cafes', '1,2,3', function(result){
+            console.log(result);
           });
-            SearchService.Business('yuko-kitchen-los-angeles', function(result){
-              console.log(result);
+          SearchService.Business('yuko-kitchen-los-angeles', function(result){
+            console.log(result);
           });
         };
 
@@ -73,24 +73,24 @@
             // let's bother a server some place on earth
             SearchService.Search(vm.searched_food, vm.searched_location, vm.category_filter, vm.price, function(result) {
 
-            vm.search_results.businesses = result.businesses;
+              vm.search_results.businesses = result.businesses;
 
-          });
+            });
             hide_views();
             $('.swish-list-area').fadeIn();
-        };
+          };
 
-        // add favorites to columns
-        function addFavorites(item){
-          SearchService.Business(item.id, function(result){
-            vm.favorites_results.push(result);
-          });
+          // add favorites to columns
+          function addFavorites(item){
+            SearchService.Business(item.id, function(result){
+              vm.favorites_results.push(result);
+            });
+          }
+
+          // remove favorites from columns
+          function removeFavorite(item){
+            vm.favorites_results.splice(vm.favorites_results.indexOf(item), 1);
+          }
+
         }
-
-        // remove favorites from columns
-        function removeFavorite(item){
-          vm.favorites_results.splice(vm.favorites_results.indexOf(item), 1);
-        }
-
-    }
-})();
+      })();

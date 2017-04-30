@@ -1,0 +1,18 @@
+<svg width="460" height="235" viewBox="0 0 460 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>show-more-button</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-4130 -2145)" figma:type="canvas">
+<g id="show-more-button" figma:type="frame">
+<g id="Group" figma:type="frame">
+<g id="unfold-more" figma:type="frame">
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 4589.8 2145.2)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 117.3 71.4L 198.9 153L 234.6 117.3L 117.3 0L -3.05176e-06 117.3L 35.7 153L 117.3 71.4ZM 117.3 387.6L 35.7 306L -3.05176e-06 341.7L 117.3 459L 234.6 341.7L 198.9 306L 117.3 387.6Z"/>
+</defs>
+</svg>
