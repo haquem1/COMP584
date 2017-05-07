@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // testing only
-  // hide_views();
-  // $('.swish-list-area').fadeIn();
+  hide_views();
+  $('.swish-card-area').fadeIn();
 
   // SHOW HOMEPAGE
   $('.swish-nav-brand').click(function(){

@@ -1,0 +1,27 @@
+<svg width="19" height="18" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>thin-arrowheads-pointing-down</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1773 -3305)" figma:type="canvas">
+<g id="thin-arrowheads-pointing-down" figma:type="frame">
+<g id="Group" figma:type="frame">
+<g id="Group" figma:type="frame">
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(1773 3305)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<g id="thin-arrowheads-pointing-down" figma:type="frame">
+<g id="Group" figma:type="frame">
+<g id="Group" figma:type="frame">
+<g id="Vector" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(1773 3312.5)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 9.06219 10.3197C 9.18902 10.4399 9.33513 10.4999 9.5001 10.4999C 9.66508 10.4999 9.81091 10.44 9.93768 10.3197L 18.8102 1.91244C 18.937 1.79219 19 1.6538 19 1.49747C 19 1.34114 18.9366 1.20269 18.8102 1.08251L 17.8583 0.180281C 17.7315 0.0600304 17.5854 8.19571e-09 17.4202 8.19571e-09C 17.2554 8.19571e-09 17.1094 0.0600304 16.9826 0.180281L 9.5001 7.2705L 2.01797 0.180281C 1.89107 0.0600304 1.74503 8.19571e-09 1.58006 8.19571e-09C 1.41502 8.19571e-09 1.26898 0.0600304 1.14215 0.180281L 0.190447 1.08251C 0.0633491 1.20269 0 1.34089 0 1.49747C 0 1.65406 0.0635492 1.79225 0.190447 1.91244L 9.06219 10.3197Z"/>
+</defs>
+</svg>

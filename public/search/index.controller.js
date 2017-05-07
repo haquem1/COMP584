@@ -20,6 +20,7 @@
           vm.searched_location = "in new places";
 
           vm.categories = [
+          { name:'restaurants' },
           { name:'bakeries' },
           { name:'bistros' },
           { name:'cafes' },
@@ -72,10 +73,9 @@
             if (vm.selected_category) vm.category_filter = vm.selected_category;
             // let's bother a server some place on earth
             SearchService.Search(vm.searched_food, vm.searched_location, vm.category_filter, vm.price, function(result) {
-
               vm.search_results.businesses = result.businesses;
-
             });
+
             hide_views();
             $('.swish-list-area').fadeIn();
           };

@@ -61,9 +61,9 @@
                   <div class="col-sm-4 col-lg-4">
                     <button type="submit" class="cust-btn btn btn-primary">Search</button>
                     <a href="/login">
-                      <img class="swish-logout" src="assets/img/navigation_bar/logout.svg" alt="logout button" data-toggle="tooltip" data-placement="bottom" title="Logout">
+                      <img class="swish-logout tooltipped" src="assets/img/navigation_bar/logout.svg" alt="logout button" data-toggle="tooltip" data-placement="bottom" title="Logout">
                     </a>
-                    <a href=""><img class="swish-menu" src="assets/img/navigation_bar/menu.svg" alt="logout button" data-toggle="tooltip" data-placement="bottom" title="Menu"></a>
+                    <a href=""><img class="swish-menu tooltipped" src="assets/img/navigation_bar/menu.svg" alt="logout button" data-toggle="tooltip" data-placement="bottom" title="Menu"></a>
                   </div>
 
 
@@ -140,8 +140,8 @@
             <img class="results-icon" src="assets/img/search_results_bar/result.svg" alt="results icon">
             <img class="pointy" src="assets/img/search_results_bar/pointy.svg" alt="pointy thingy for the bar">
 
-            <img class="list-search-results" src="assets/img/search_results_bar/bullets.svg" alt="search results icon" data-toggle="tooltip" data-placement="bottom" title="Search Results">
-            <img class="card-favorite-results" src="assets/img/search_results_bar/cards.svg" alt="favorite section icon" data-toggle="tooltip" data-placement="bottom" title="Your Favorites">
+            <img class="list-search-results tooltipped" src="assets/img/search_results_bar/bullets.svg" alt="search results icon" data-toggle="tooltip" data-placement="bottom" title="Search Results">
+            <img class="card-favorite-results tooltipped" src="assets/img/search_results_bar/cards.svg" alt="favorite section icon" data-toggle="tooltip" data-placement="bottom" title="Your Favorites">
           </section>
 
 
@@ -269,60 +269,91 @@
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
     <!-- CARD MODULE                             -->
     <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <link rel="stylesheet" href="search/css/card_result.css">
+    <link rel="stylesheet" href="search/css/card_result2.css">
     <section class="swish-card-area">
       <div class="container">
+
+        <!-- CARD ELEMENT -->
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-4" ng-repeat="business in vm.favorites_results">
-            <div class="swish-card-item">
+          <div class="col-lg-4 col-sm-6 col-xs-12" ng-repeat="business in vm.favorites_results">
 
-              <section class="card-item-information">
-                <img ng-src="{{business.photos[$index % 3]}}" alt="food sample 1">
-                <!-- |||||||||||||||||||||||||||| -->
-                <!-- INFORMATION CONTAINER-->
-                <!-- |||||||||||||||||||||||||||| -->
-                <div class="card-item-info-container">
-                  <p class="card-item-name"> {{business.name}}</p>
-                  <p class="card-item-address">{{business.location.address1}}</p>
-                  <p class="card-item-address">{{business.location.city}}, {{business.location.state}} {{business.location.zip_code}}</p>
-                  <p class="card-item-phone">{{business.display_phone}}</p>
-                  <p class="card-item-rating"><br>Rating: {{business.rating}}/5 ({{business.review_count}} reviews)</p>
+            <!-- CARD CONTAINER -->
+            <div class="card-container">
+
+              <!-- CARD IMAGE CONTAINER -->
+              <div class="card-image-container">
+                <img class="card-image" ng-src="{{business.photos[$index % 3]}}" alt="">
+              </div>
+
+              <!-- CARD INFORMATION CONTAINER -->
+              <div class="card-information-container">
+
+                <!-- card title container -->
+                <div class="card-title-container">
+                  <p class="card-title">{{business.name}}</p>
+                  <img class="business-status" src="assets/img/search_card_item/open.svg" alt="">
                 </div>
 
-                <!-- |||||||||||||||||||||||||||| -->
-                <!-- REMOVE CARD BTN -->
-                <!-- |||||||||||||||||||||||||||| -->
-                <div class="rem-btn-container" ng-click="vm.removeFavorite(business)">
-                  <a href><img class="rem-btn" data-toggle="tooltip" data-placement="left" title="Remove from favorite" src="assets/img/search_card_item/remove.svg" alt=""></a>
+                <!-- card address container -->
+                <div class="card-info-container">
+                  <img class="card-icon" src="assets/img/search_card_item/location.svg" alt="">
+                  <p class="card-text-info">{{business.location.address1}} <br> {{business.location.city}}, {{business.location.state}} {{business.location.zip_code}}</p>
+                  <!-- <p class="card-address">los angeles, CA 90028</p> -->
                 </div>
 
-                <!-- |||||||||||||||||||||||||||| -->
-                <!-- CARD BTN CONTAINER -->
-                <!-- |||||||||||||||||||||||||||| -->
-                <div class="card-btn-container">
-                  <div class="row text-center">
-                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is open" src="../assets/img/search_card_item/open.svg" alt="open restaurant indicator" ng-show="{{business.hours[0].is_open_now}}">
-                    <img class="card-btn" data-toggle="tooltip" data-placement="top" title="Restaurant is closed" src="../assets/img/search_card_item/closed.svg" alt="closed restaurant indicator" ng-show="{{!business.hours[0].is_open_now}}">
-                    <a href="{{business.url}}">
-                      <img data-toggle="tooltip" data-placement="top" title="Go to Yelp" class="card-btn" src="assets/img/search_card_item/yelp.svg" alt="">
-                    </a>
+                <!-- card phone container -->
+                <div class="card-info-container phone-container">
+                  <img class="card-icon" src="assets/img/search_card_item/smartphone.svg" alt="">
+                  <p class="card-text-info">{{business.display_phone}}</p>
+                </div>
+                
+                <!-- ADDITIONAL DATA INFORMATION CONTAINER -->
+                <div class="additional-info-container">
+                  <div class="add-info-box box1 text-center"> 
+                    <img class="add-card-icon" src="assets/img/search_card_item/reviews.svg" alt="">
+                    <p class="add-text-info">{{business.review_count}}</p>
                   </div>
-                </div>
 
-              </section>
+                  <div class="add-info-box box2 text-center">
+                    <img class="add-card-icon" src="assets/img/search_card_item/rating.svg" alt="">
+                    <p class="add-text-info">{{business.rating}}</p>
+                  </div>
+
+                  <div class="add-info-box box3 text-center">
+                    <a ng-attr-href="{{business.url}}">
+                     <img class="add-card-icon" src="assets/img/search_card_item/yelp.svg" alt="">
+                     <p class="add-text-info">yelp</p>                 
+                   </a>
+
+                    <!--
+                    <img class="add-card-icon" src="assets/img/search_card_item/yelp.svg" alt="">
+                    <p class="add-text-info">yelp</p>
+                  -->
+                </div>
+              </div>
+
             </div>
+
           </div>
+
 
         </div>
       </div>
-    </section>
 
 
-    <!-- ||||||||||||||||||||||||||||||||||||||| -->
-    <script src="search/js/navigation_bar.js"></script>
-    <script src="search/js/view_selection.js"></script>
-    <!-- <script src="assets/js/rating_stars.js"></script> -->
 
-    <!-- ||||||||||||||||||||||||||||||||||||||| -->
 
-  </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+  <script src="search/js/navigation_bar.js"></script>
+  <script src="search/js/view_selection.js"></script>
+  <!-- <script src="assets/js/rating_stars.js"></script> -->
+
+  <!-- ||||||||||||||||||||||||||||||||||||||| -->
+
+</div>
