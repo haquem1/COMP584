@@ -211,7 +211,6 @@
   position:absolute;
   top:0;
   right:-50%;
-  z-index:10;
 
   transform:translate(0%, 6.3vh);
   border-radius:0 0 0 20px;
