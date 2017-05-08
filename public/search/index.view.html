@@ -219,9 +219,7 @@
                 <section class="result-info-container">
                   <div class="result-inner-container">
 
-                    <a href="">
-                      <img class="favorite-btn tooltipped" src="assets/img/search_list_item/add.svg" alt="add to favorite icon" data-toggle="tooltip" data-placement="left" title="Add To Favorites" ng-click="vm.addFavorites(item)">
-                    </a>
+                    <img class="favorite-btn tooltipped" src="assets/img/search_list_item/add.svg" alt="add to favorite icon" data-toggle="tooltip" data-placement="left" title="Add To Favorites" ng-click="vm.addFavorites(item)">
 
                     <div class="upper-information">
                       <p class="result-info result-name">{{item.name}}</p>
@@ -272,13 +270,16 @@
     <link rel="stylesheet" href="search/css/card_result2.css">
     <section class="swish-card-area">
       <div class="container">
-
         <!-- CARD ELEMENT -->
         <div class="row">
           <div class="col-lg-4 col-sm-6 col-xs-12" ng-repeat="business in vm.favorites_results">
 
             <!-- CARD CONTAINER -->
             <div class="card-container">
+
+              <a href="" ng-click="vm.removeFavorite(business)">
+                <img class="remove-icon tooltipped" data-toggle="tooltip" data-placement="left" title="Remove Item" src="assets/img/search_card_item/remove.svg" alt="remove card icon">
+              </a>
 
               <!-- CARD IMAGE CONTAINER -->
               <div class="card-image-container">
@@ -291,7 +292,8 @@
                 <!-- card title container -->
                 <div class="card-title-container">
                   <p class="card-title">{{business.name}}</p>
-                  <img class="business-status" src="assets/img/search_card_item/open.svg" alt="">
+                  <img class="business-status" src="assets/img/search_card_item/open.svg" alt="" ng-show="{{business.hours[0].is_open_now}}">
+                  <img class="business-status" src="assets/img/search_card_item/close.svg" alt="" ng-show="{{!business.hours[0].is_open_now}}">
                 </div>
 
                 <!-- card address container -->
@@ -310,50 +312,42 @@
                 <!-- ADDITIONAL DATA INFORMATION CONTAINER -->
                 <div class="additional-info-container">
                   <div class="add-info-box box1 text-center"> 
-                    <img class="add-card-icon" src="assets/img/search_card_item/reviews.svg" alt="">
-                    <p class="add-text-info">{{business.review_count}}</p>
+                    <a ng-attr-href="{{business.url}}" target="_blank">
+                      <img class="add-card-icon tooltipped" data-toggle="tooltip" data-placement="top" title="Reviews" src="assets/img/search_card_item/reviews.svg" alt="">
+                      <p class="add-text-info">{{business.review_count}}</p>  
+                    </a>
                   </div>
 
                   <div class="add-info-box box2 text-center">
-                    <img class="add-card-icon" src="assets/img/search_card_item/rating.svg" alt="">
+                    <img class="add-card-icon tooltipped" data-toggle="tooltip" data-placement="top" title="Rating" src="assets/img/search_card_item/rating.svg" alt="">
                     <p class="add-text-info">{{business.rating}}</p>
                   </div>
 
                   <div class="add-info-box box3 text-center">
-                    <a ng-attr-href="{{business.url}}">
-                     <img class="add-card-icon" src="assets/img/search_card_item/yelp.svg" alt="">
-                     <p class="add-text-info">yelp</p>                 
-                   </a>
+                    <a ng-attr-href="{{business.url}}" target="_blank">
+                      <img class="add-card-icon tooltipped" data-toggle="tooltip" data-placement="top" title="Go To Yelp" src="assets/img/search_card_item/yelp.svg" alt="link to yelp">
+                      <p class="add-text-info">yelp</p>                 
+                    </a>
 
-                    <!--
-                    <img class="add-card-icon" src="assets/img/search_card_item/yelp.svg" alt="">
-                    <p class="add-text-info">yelp</p>
-                  -->
+                  </div>
                 </div>
+
               </div>
 
             </div>
 
+
           </div>
-
-
         </div>
       </div>
+    </section>
 
 
+    <!-- ||||||||||||||||||||||||||||||||||||||| -->
+    <script src="search/js/navigation_bar.js"></script>
+    <script src="search/js/view_selection.js"></script>
+    <!-- <script src="assets/js/rating_stars.js"></script> -->
 
+    <!-- ||||||||||||||||||||||||||||||||||||||| -->
 
-
-
-    </div>
-  </section>
-
-
-  <!-- ||||||||||||||||||||||||||||||||||||||| -->
-  <script src="search/js/navigation_bar.js"></script>
-  <script src="search/js/view_selection.js"></script>
-  <!-- <script src="assets/js/rating_stars.js"></script> -->
-
-  <!-- ||||||||||||||||||||||||||||||||||||||| -->
-
-</div>
+  </div>
