@@ -85,8 +85,12 @@
             SearchService.Business(item.id, function(result){
               vm.favorites_results.push(result);
             });
-          }
 
+            $(".mascot-message").fadeIn(300);
+            setTimeout(function() {
+              $(".mascot-message").fadeOut(500);
+            }, 1500);
+          }
           // remove favorites from columns
           function removeFavorite(item){
             vm.favorites_results.splice(vm.favorites_results.indexOf(item), 1);
