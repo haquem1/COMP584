@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+//The www file creates a server that uses the 8080 port
+
 // module dependencies
 var app = require('../server');
 var debug = require('debug')('yelp:server');

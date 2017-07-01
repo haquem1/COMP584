@@ -1,3 +1,9 @@
+//passport is an authentication middleware for node js.
+//passport can be used to authenticate based on username and password
+
+//jwt = json web tokens
+//
+
 var passport	  = require('passport');
 var jwt         = require('jwt-simple');
 var mongoose    = require('mongoose');
@@ -6,6 +12,7 @@ var config      = require('../config/database'); // get db config file
 
 // apply our config to passport
 require('../config/passport')(passport);
+
 
 const routes = require('express').Router();
 
