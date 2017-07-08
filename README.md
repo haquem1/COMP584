@@ -13,22 +13,14 @@ bring up a terminal and cd into the project.
 ```
 npm install
 ```
-
-2. Start the server
+2. Start the server and build frontend
 ```
 npm run dev
 ```
-Bring up a new terminal, 
-3. Start webpack so that it compiles NG2 to public and watch any changes
-```
-npm run buildng2
-```
+Wait a little bit...
 Now, the project should be up and running in localhost:8080.
 
 # TODO: 
-0. Create parallel execution of 'dev' and 'buildng2' with one npm script
-1. Clean up that package.json file.
- * There are some packages that are for testing purposes (not needed)
 2. Improve Webpack configuration
 3. Add SASS Support
 4. Improve SRC folder structure
