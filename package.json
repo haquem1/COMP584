@@ -6,7 +6,7 @@
     "server": "nodemon -r dotenv/config ./bin/www",
     "frontend": "webpack --watch",
     "dev":"concurrently --kill-others \"npm run server\" \"npm run frontend\" ",
-    "deploy": "git push heroku master",
+    "deploy": "git push heroku master"
   },
   "dependencies": {
     "bcrypt": "^0.8.5",
