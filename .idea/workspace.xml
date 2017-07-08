@@ -2,64 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b9ba86c-d7bb-489c-a039-5e293ed12b48" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/app-services/authentication.service.js" afterPath="$PROJECT_DIR$/public(old)/app-services/authentication.service.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/app-services/search.service.js" afterPath="$PROJECT_DIR$/public(old)/app-services/search.service.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/app.js" afterPath="$PROJECT_DIR$/public(old)/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/css/styles.css" afterPath="$PROJECT_DIR$/public(old)/assets/css/styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/bread-back.jpeg" afterPath="$PROJECT_DIR$/public(old)/assets/img/bread-back.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/chick.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/chick.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/homepage/background4.jpg" afterPath="$PROJECT_DIR$/public(old)/assets/img/homepage/background4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/list_bg.webp" afterPath="$PROJECT_DIR$/public(old)/assets/img/list_bg.webp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/navigation_bar/location.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/navigation_bar/location.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/navigation_bar/logout.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/navigation_bar/logout.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/navigation_bar/menu.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/navigation_bar/menu.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/navigation_bar/search.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/navigation_bar/search.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_card_item/close.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_card_item/close.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_card_item/location.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_card_item/location.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_card_item/open.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_card_item/open.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_card_item/rating.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_card_item/rating.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_card_item/remove.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_card_item/remove.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_card_item/reviews.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_card_item/reviews.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_card_item/smartphone.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_card_item/smartphone.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_card_item/thin-arrowheads-pointing-down.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_card_item/thin-arrowheads-pointing-down.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_card_item/yelp.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_card_item/yelp.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_list_item/add.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_list_item/add.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_list_item/expand.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_list_item/expand.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_list_item/expand2.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_list_item/expand2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_list_item/expand3.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_list_item/expand3.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_list_item/fold.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_list_item/fold.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_list_item/rating.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_list_item/rating.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_list_item/reviews.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_list_item/reviews.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_results_bar/bullets.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_results_bar/bullets.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_results_bar/cards.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_results_bar/cards.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_results_bar/pointy.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_results_bar/pointy.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/img/search_results_bar/result.svg" afterPath="$PROJECT_DIR$/public(old)/assets/img/search_results_bar/result.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/js/rating_stars.js" afterPath="$PROJECT_DIR$/public(old)/assets/js/rating_stars.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/controllers/app.js" afterPath="$PROJECT_DIR$/public(old)/controllers/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/controllers/constants.js" afterPath="$PROJECT_DIR$/public(old)/controllers/constants.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/controllers/services.js" afterPath="$PROJECT_DIR$/public(old)/controllers/services.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public(old)/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/login/README.txt" afterPath="$PROJECT_DIR$/public(old)/login/README.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/login/css/style.css" afterPath="$PROJECT_DIR$/public(old)/login/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/login/index.controller.js" afterPath="$PROJECT_DIR$/public(old)/login/index.controller.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/login/index.view.html" afterPath="$PROJECT_DIR$/public(old)/login/index.view.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/login/js/index.js" afterPath="$PROJECT_DIR$/public(old)/login/js/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/login/license.txt" afterPath="$PROJECT_DIR$/public(old)/login/license.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/css/card_result2.css" afterPath="$PROJECT_DIR$/public(old)/search/css/card_result2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/css/homepage_elements.css" afterPath="$PROJECT_DIR$/public(old)/search/css/homepage_elements.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/css/list_results2.css" afterPath="$PROJECT_DIR$/public(old)/search/css/list_results2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/css/main.css" afterPath="$PROJECT_DIR$/public(old)/search/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/css/media-queries-reference.scss" afterPath="$PROJECT_DIR$/public(old)/search/css/media-queries-reference.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/css/navigation_bar2.css" afterPath="$PROJECT_DIR$/public(old)/search/css/navigation_bar2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/index.controller.js" afterPath="$PROJECT_DIR$/public(old)/search/index.controller.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/index.view.html" afterPath="$PROJECT_DIR$/public(old)/search/index.view.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/js/navigation_bar.js" afterPath="$PROJECT_DIR$/public(old)/search/js/navigation_bar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/search/js/view_selection.js" afterPath="$PROJECT_DIR$/public(old)/search/js/view_selection.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/views/index.html" afterPath="$PROJECT_DIR$/public(old)/views/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/views/login.html" afterPath="$PROJECT_DIR$/public(old)/views/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/views/registration.html" afterPath="$PROJECT_DIR$/public(old)/views/registration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -90,11 +35,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+            <state relative-caret-position="60">
+              <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TEAM_README.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TEAM_README.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -118,6 +83,7 @@
         <option value="$PROJECT_DIR$/src/stylesheets/testing.scss" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -265,12 +231,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499487515925</updated>
-      <workItem from="1499487518117" duration="6199000" />
+      <workItem from="1499487518117" duration="6337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6199000" />
+    <option name="totallyTimeSpent" value="6337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="30" width="974" height="1057" extended-state="0" />
@@ -399,10 +365,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TEAM_README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+        <state relative-caret-position="60">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
           <folding />
         </state>
       </provider>
