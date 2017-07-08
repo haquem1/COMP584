@@ -5,7 +5,7 @@
     "start": "node -r dotenv/config ./bin/www",
     "server": "nodemon -r dotenv/config ./bin/www",
     "frontend": "webpack --watch",
-    "dev":"concurrently --kill-others \"npm run server\" \"npm run frontend\" "
+    "dev":"concurrently --kill-others \"npm run server\" \"npm run frontend\" ",
     "deploy": "git push heroku master",
   },
   "dependencies": {
