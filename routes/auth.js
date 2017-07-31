@@ -7,7 +7,7 @@ var User        = require('../models/user'); // get the mongoose model
 // apply our config to passport
 require('../config/passport')(passport);
 
-postSignUp = function (req, res){
+postSignUp = function (req, res) {
   if (!req.body.name || !req.body.password) {
     res.json({success: false, msg: 'Please pass name and password.'});
   } else {
@@ -89,4 +89,5 @@ var authObject = {
   auth:     postAuth,
   protect:  getProtected
 }
+
 module.exports = authObject;
