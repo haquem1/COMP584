@@ -1,10 +1,11 @@
 var JwtStrategy = require('passport-jwt').Strategy;
 var FacebookStrategy = require('passport-facebook').Strategy;
+var GoogleStrategy = require('passport-google').Strategy;
 
 // load user model
 var User = require('../models/user');
 var config = require('./database'); // get db config file
-var auth = require('./auth'); // get social logins
+var configAuth = require('./auth'); // get social logins
 
 module.exports = function(passport) {
   var opts = {};
@@ -71,8 +72,41 @@ function(token, refreshToken, profile, done) {
         });
     });
 
-}));
+  }));
 
-};
+  passport.use(new GoogleStrategy({
+       clientID: configAuth.googleAuth.clientID,
+       clientSecret: configAuth.googleAuth.clientSecret,
+       returnURL: configAuth.googleAuth.returnURL,
+   },
+
+   function(identifier, profile, done) {
+       process.nextTick(function() {
+           // try to find the user based on their google id
+           User.findOne({ 'google.id' : profile.id }, function(err, user) {
+               if (err) return done(err);
+
+               if (user) {
+                   // if a user is found, log them in
+                   return done(null, user);
+               } else {
+                   // if the user isnt in our database, create a new user
+                   var newUser = new User();
+
+                   // set all of the relevant information
+                   newUser.google.id = profile.id;
+                   newUser.google.token = token;
+                   newUser.google.name = profile.displayName;
+
+                   // save the user
+                   newUser.save(function(err) {
+                       if (err)throw err;
+
+                       return done(null, newUser);
+                   });
+               }
+           });
+       });
+   }));
 
 };
